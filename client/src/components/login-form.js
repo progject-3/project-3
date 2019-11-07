@@ -12,7 +12,7 @@ class LoginForm extends Component {
         }
         this.handleSubmit = this.handleSubmit.bind(this)
         this.handleChange = this.handleChange.bind(this)
-  
+
     }
 
     handleChange(event) {
@@ -26,10 +26,9 @@ class LoginForm extends Component {
         console.log('handleSubmit')
 
         axios
-            .post('/user/login', {
+            .post('/user/', {
                 username: this.state.username,
-                password: this.state.password,
-               
+                password: this.state.password
             })
             .then(response => {
                 console.log('login response: ')
@@ -48,10 +47,9 @@ class LoginForm extends Component {
             }).catch(error => {
                 console.log('login error: ')
                 console.log(error);
-                
+
             })
     }
-
     render() {
         if (this.state.redirectTo) {
             return <Redirect to={{ pathname: this.state.redirectTo }} />
@@ -93,7 +91,7 @@ class LoginForm extends Component {
                             <div className="col-7"></div>
                             <button
                                 className="btn btn-primary col-1 col-mr-auto"
-                               
+
                                 onClick={this.handleSubmit}
                                 type="submit">Login</button>
                         </div>

@@ -1,12 +1,15 @@
 const express = require('express')
 const router = express.Router()
-const User = require('../database/models/user')
+const User = require('../models/user')
 const passport = require('../passport')
 
 router.post('/', (req, res) => {
     console.log('user signup');
 
-    const { username, password, firstName, lastName } = req.body
+    // const { username, password } = req.body
+    const username = req.body.username;
+    const password = req.body.password;
+    console.log(username, password)
     // ADD VALIDATION
     User.findOne({ username: username }, (err, user) => {
         if (err) {
@@ -19,9 +22,7 @@ router.post('/', (req, res) => {
         else {
             const newUser = new User({
                 username: username,
-                password: password,
-                firstName: firstName,
-                lastName: lastName
+                password: password
             })
             newUser.save((err, savedUser) => {
                 if (err) return res.json(err)
