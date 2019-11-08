@@ -1,7 +1,6 @@
 import React, { Component } from 'react'
 import { Redirect } from 'react-router-dom'
 import axios from 'axios'
-import { Redirect } from 'react-router-dom'
 
 class Signup extends Component {
 	constructor() {
@@ -9,14 +8,18 @@ class Signup extends Component {
 		this.state = {
 			username: '',
 			password: '',
-			confirmPassword: '',
+			password_confirmation: '',
+			firstName: '',
+			lastName: '',
+			email: '',
+			phone: '',
 			redirectTo: null
 
 		}
 		this.handleSubmit = this.handleSubmit.bind(this)
 		this.handleChange = this.handleChange.bind(this)
 	}
-	handleChange(event) {
+	handleChange=(event)=> {
 		this.setState({
 			[event.target.name]: event.target.value
 		})
@@ -30,7 +33,12 @@ class Signup extends Component {
 		//request to server to add a new username/password
 		axios.post('/user/', {
 			username: this.state.username,
-			password: this.state.password
+			password: this.state.password,
+			firstName: this.state.firstName,
+			lastName: this.state.lastName,
+			email: this.state.email,
+			phone: this.state.phone
+
 		})
 			.then(response => {
 				console.log(response)
@@ -83,6 +91,80 @@ class Signup extends Component {
 									type="password"
 									name="password"
 									value={this.state.password}
+									onChange={this.handleChange}
+								/>
+							</div>
+						</div>
+						<div className="form-group">
+							<div className="col-1 col-ml-auto">
+								<label className="form-label" htmlFor="password">Confirm Password: </label>
+							</div>
+							<div className="col-3 col-mr-auto">
+								<input className="form-input"
+									placeholder="Confirm Password"
+									type="password"
+									name="password_confirmation"
+									value={this.state.password_confirmation}
+									onChange={this.handleChange}
+								/>
+							</div>
+						</div>
+						<div className="form-group">
+							<div className="col-1 col-ml-auto">
+								<label className="form-label" htmlFor="username">First Name</label>
+							</div>
+							<div className="col-3 col-mr-auto">
+								<input className="form-input"
+									type="text"
+									id="firstName"
+									name="firstName"
+									placeholder="First Name"
+									value={this.state.firstName}
+									onChange={this.handleChange}
+								/>
+							</div>
+						</div>
+						<div className="form-group">
+							<div className="col-1 col-ml-auto">
+								<label className="form-label" htmlFor="username">Last Name</label>
+							</div>
+							<div className="col-3 col-mr-auto">
+								<input className="form-input"
+									type="text"
+									id="lastName"
+									name="lastName"
+									placeholder="Last Name"
+									value={this.state.lastName}
+									onChange={this.handleChange}
+								/>
+							</div>
+						</div>
+						<div className="form-group">
+							<div className="col-1 col-ml-auto">
+								<label className="form-label" htmlFor="username">Email</label>
+							</div>
+							<div className="col-3 col-mr-auto">
+								<input className="form-input"
+									type="text"
+									id="email"
+									name="email"
+									placeholder="Email (optional)"
+									value={this.state.email}
+									onChange={this.handleChange}
+								/>
+							</div>
+						</div>
+						<div className="form-group">
+							<div className="col-1 col-ml-auto">
+								<label className="form-label" htmlFor="username">Phone</label>
+							</div>
+							<div className="col-3 col-mr-auto">
+								<input className="form-input"
+									type="number"
+									id="phone"
+									name="phone"
+									placeholder="Phone (optional)"
+									value={this.state.phone}
 									onChange={this.handleChange}
 								/>
 							</div>
