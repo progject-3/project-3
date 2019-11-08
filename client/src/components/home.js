@@ -1,5 +1,8 @@
-import React, { Component } from 'react'
+
+import React, { Component } from 'react';
+import './Styles/Home.css';
 import SearchResultContainer from "../components/search/SearchResultContainer";
+
 class Home extends Component {
 
 

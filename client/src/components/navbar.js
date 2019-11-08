@@ -56,11 +56,11 @@ class Navbar extends Component {
                                 </section>
                             )}
                     </div>
-                    <div className="col-4 col-mr-auto">
+                    {/* <div className="col-4 col-mr-auto">
                         <div id="top-filler"></div>
                         <img src={logo} className="App-logo" alt="logo" />
                         <h1 className="App-title">MERN Passport</h1>
-                    </div>
+                    </div> */}
                 </header>
             </div>
 
