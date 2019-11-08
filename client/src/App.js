@@ -7,6 +7,7 @@ import LoginForm from './components/login-form'
 import Navbar from './components/navbar'
 import Home from './components/home'
 
+
 class App extends Component {
   constructor() {
     super()
@@ -63,6 +64,7 @@ class App extends Component {
         <Route
           exact path="/"
           component={Home} />
+          {/* <SearchResultContainer />; */}
         <Route
           path="/login"
           render={() =>
