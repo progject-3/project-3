@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import { Redirect } from 'react-router-dom'
 import axios from 'axios'
 import { Redirect } from 'react-router-dom'
 
@@ -92,7 +93,6 @@ class Signup extends Component {
 								onClick={this.handleSubmit}
 								type="submit"
 							>Sign up</button>
-							{/* {this.redirectTo} */}
 						</div>
 					</form>
 				</div>
