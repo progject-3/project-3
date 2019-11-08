@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import { Redirect } from 'react-router-dom'
 import axios from 'axios'
+import './Styles/Login.css';
 
 class LoginForm extends Component {
     constructor() {
@@ -56,6 +57,7 @@ class LoginForm extends Component {
         } else {
             return (
                 <div>
+                    <br></br>
                     <h4>Login</h4>
                     <form className="form-horizontal">
                         <div className="form-group">

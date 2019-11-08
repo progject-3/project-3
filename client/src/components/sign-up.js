@@ -1,6 +1,9 @@
-import React, { Component } from 'react'
-import { Redirect } from 'react-router-dom'
-import axios from 'axios'
+import React, { Component } from 'react';
+import { Redirect } from 'react-router-dom';
+import axios from 'axios';
+import './Styles/Signup.css';
+
+// import { validateAll } from 'indicative';
 
 class Signup extends Component {
 	constructor() {
@@ -25,10 +28,42 @@ class Signup extends Component {
 		})
 		
 	} 
-	handleSubmit(event) {
-		console.log('sign-up handleSubmit, username: ')
-		console.log(this.state.username)
-		event.preventDefault()
+	handleSubmit = (event) => {
+		console.log('sign-up handleSubmit, username: ');
+		console.log(this.state.username);
+		event.preventDefault();
+		
+		//? Validating User using indicative Package
+		//? Taking the input from "state"
+		// const data = this.state;
+		// const rules = {
+		// 	username: 'required|string',
+		// 	password: 'required|string|min:6|confirmed',
+		// 	password_confirmation: '',
+		// 	firstName: 'required|string',
+		// 	lastName: 'required|string',
+		// 	email: '',
+		// 	phone: '',
+		// }
+		// //displaying custom message for errors
+		// const messages = {
+		// 	required: 'This {{ field }} is required.',
+		// 	'username.username': 'The email is invalid.',
+		// 	'password.confirmed': 'The password does not match'
+		// }
+
+		// validateAll(data, rules, messages)
+		// 	.then(() => {
+		// 	console.log('success');
+		// })
+		// 	.catch(errors => {
+		// 		console.log(errors); //show errors to user
+		// 		const formattedErrors = {}
+		// 		errors.forEach(error => formattedErrors[error.field] = error.message)
+		// 		this.setState({ errors: formattedErrors })
+		// 	})
+	
+
 
 		//request to server to add a new username/password
 		axios.post('/user/', {
