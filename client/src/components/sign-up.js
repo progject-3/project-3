@@ -20,7 +20,8 @@ class Signup extends Component {
 		this.setState({
 			[event.target.name]: event.target.value
 		})
-	}
+		
+	} 
 	handleSubmit(event) {
 		console.log('sign-up handleSubmit, username: ')
 		console.log(this.state.username)
