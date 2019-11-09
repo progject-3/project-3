@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import SearchForm from "./SearchForm";
 import ResultList from "./ResultList";
+// import NoMatch from "./NoMatch";
 import API from "../../utils/API";
 
 class SearchResultContainer extends Component {
@@ -11,7 +12,7 @@ class SearchResultContainer extends Component {
 
   // When this component mounts, search the Giphy API for pictures of kittens
   componentDidMount() {
-    this.searchGiphy("");
+    this.searchGiphy("60602");
   }
 
   searchGiphy = query => {
