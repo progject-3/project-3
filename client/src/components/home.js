@@ -8,7 +8,7 @@ class Home extends Component {
       height: '50%'
     };
     return (
-      <div>
+      <div> 
         <p>It's good to be home</p>
         <img
           style={imageStyle}
