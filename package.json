@@ -38,5 +38,9 @@
     "save": "^2.4.0",
     "spectre.css": "^0.5.8"
   },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/zaid.fadel89/project-3.git"
+  },
   "proxy": "http://localhost:3000"
 }
