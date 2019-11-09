@@ -27,18 +27,21 @@ class LoginForm extends Component {
         console.log('handleSubmit')
 
         axios
-            .post('/user/', {
+            .post('/user/login', {
                 username: this.state.username,
                 password: this.state.password
             })
             .then(response => {
-                console.log('login response: ')
-                console.log(response)
+                console.log('login response: ');
+                console.log(response);
+                console.log(response.status);
+                
                 if (response.status === 200) {
                     // update App.js state
                     this.props.updateUser({
                         loggedIn: true,
-                        username: response.data.username
+                        username: response.data.username,
+                        firstName: response.data.firstName
                     })
                     // update the state to redirect to home
                     this.setState({
@@ -56,16 +59,13 @@ class LoginForm extends Component {
             return <Redirect to={{ pathname: this.state.redirectTo }} />
         } else {
             return (
-                <div>
+                <div className="wrapperl">
                     <br></br>
                     <h4>Login</h4>
-                    <form className="form-horizontal">
-                        <div className="form-group">
-                            <div className="col-1 col-ml-auto">
-                                <label className="form-label" htmlFor="username">Username</label>
-                            </div>
-                            <div className="col-3 col-mr-auto">
-                                <input className="form-input"
+                    <form>
+                        <div className="form-wrapperl">
+                                <label className="form-labell" htmlFor="username">Username: </label>
+                                <input className="form-inputl"
                                     type="text"
                                     id="username"
                                     name="username"
@@ -73,30 +73,23 @@ class LoginForm extends Component {
                                     value={this.state.username}
                                     onChange={this.handleChange}
                                 />
-                            </div>
-                        </div>
-                        <div className="form-group">
-                            <div className="col-1 col-ml-auto">
-                                <label className="form-label" htmlFor="password">Password: </label>
-                            </div>
-                            <div className="col-3 col-mr-auto">
-                                <input className="form-input"
-                                    placeholder="password"
+                            
+                                <label className="form-labell" htmlFor="password">Password: </label>
+                                <input className="form-inputl"
+                                    placeholder="Password"
                                     type="password"
                                     name="password"
                                     value={this.state.password}
                                     onChange={this.handleChange}
                                 />
-                            </div>
-                        </div>
-                        <div className="form-group ">
-                            <div className="col-7"></div>
+                            
                             <button
-                                className="btn btn-primary col-1 col-mr-auto"
+                                className="btn btn-primary"
 
                                 onClick={this.handleSubmit}
                                 type="submit">Login</button>
-                        </div>
+                            
+                            </div>
                     </form>
                 </div>
             )
@@ -105,3 +98,12 @@ class LoginForm extends Component {
 }
 
 export default LoginForm
+                            
+                           
+                        
+                        
+                            
+                           
+                            
+                        
+                        

@@ -11,6 +11,7 @@ router.post('/', (req, res) => {
     const password = req.body.password;
     const firstName = req.body.firstName;
     const lastName = req.body.lastName;
+    const age = req.body.age;
     const email = req.body.email;
     const phone = req.body.phone;
     console.log(username, password)
@@ -29,6 +30,7 @@ router.post('/', (req, res) => {
                 password: password,
                 firstName: firstName,
                 lastName: lastName,
+                age: age,
                 email: email,
                 phone
             })
@@ -51,7 +53,8 @@ router.post(
     (req, res) => {
         console.log('logged in', req.user);
         var userInfo = {
-            username: req.user.username
+            username: req.user.username,
+            firstName:req.user.firstName
         };
         res.send(userInfo);
     }
@@ -64,6 +67,7 @@ router.get('/', (req, res, next) => {
         res.json({ user: req.user })
     } else {
         res.json({ user: null })
+
     }
 })
 
