@@ -1,40 +1,63 @@
 import React, { Component } from "react";
 import { Redirect } from "react-router-dom";
-import API from "../../utils/API";
+import "./Style/Result.css"
 class ResultList extends Component {
-  constructor(){
+  constructor() {
     super();
     this.state = {
-      redirectTo: null
+      redirectTo: null,
+      id: "",
+      location: "",
+      imageURL: "",
+      zipcode: ""
 
     }
   }
-  renderPage = (e) =>{
-    console.log(e.target.id);
-
-        console.log("deleting");
-    console.log("results: "+JSON.stringify(this.props.results)); 
-    API.search(e.target.id)
-    .then(id => this.setState({
-      redirectTo: '/specificPage/'+id })) }
+  renderPage = (id, location,url,zipcode) => {
+    console.log("clicked on image")
+    console.log("url: " +url);
+    console.log(id);
+    this.setState({
+      redirectTo:"/specificPage",
+      id:id,
+      location: location,
+      imageURL: url,
+      zipcode: zipcode
+    })
+    // console.log("deleting");
+    // console.log("results: " + JSON.stringify(this.props.results));
+    // API.search(id)
+    //   .then(id => this.setState({
+    //     redirectTo: '/specificPage' 
+    //   }))
+  }
 
 
   render() {
-    if(this.state.redirectTo){
-      return <Redirect to={{pathname: this.state.redirectTo, state:[this.state.results] }} />
-    }
-    else{
+    if (this.state.redirectTo) {
       return (
-        <ul className="list-group">
-          {this.props.results.map(result => (
-            <li className="list-group-item" key={result.recordid}>
-              <p>{result.fields.host_location}</p>
-              <p>{result.fields.zipcode}</p>
-              <p>{result.fields.price}</p>
-              <img alt={result.fields} className="img-fluid" src={result.fields.picture_url} onClick={this.renderPage} />
-            </li>
-          ))}
-        </ul>
+      <Redirect to={{ pathname: this.state.redirectTo, state: [this.state.id,this.state.location,this.state.imageURL,this.state.zipcode] }} />
+      )
+
+    } else {
+      return (
+        <div className="wrapper">
+          <ul className="list-group">
+
+            {this.props.results.map(result => (
+              <li className="list-group-item box" key={result.recordid}>
+                <div className="img-container">
+                <img alt={result.fields}  className="card-img-top card-height" src={result.fields.picture_url} onClick={() => {this.renderPage(result.recordid, result.fields.host_location,result.fields.picture_url,result.fields.zipcode)} }/>
+                </div>
+                <p>{result.fields.host_location}</p>
+                <p>{result.fields.zipcode}</p>
+                <p>{result.fields.price}</p>
+
+
+              </li>
+            ))}
+          </ul>
+        </div>
       );
 
     }
