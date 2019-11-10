@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import HomeMap from './HomeMap';
 import SearchResultContainer from './search/SearchResultContainer';
+import { Col, Row } from "./Grid.js";
+// import IndividualPage from './search/IndividualPage';
 class Home extends Component {
   render() {
     const imageStyle = {
@@ -15,8 +17,16 @@ class Home extends Component {
           alt='home'
           src='https://i.ytimg.com/vi/N1icEHtgb3g/maxresdefault.jpg'
         />
-        <SearchResultContainer />;
-        <HomeMap />
+         <Row>
+          <Col size="md-6">
+
+          <HomeMap />
+      </Col >
+      <Col size="md-6">
+     
+        <SearchResultContainer /> 
+        </Col >
+        </Row>
       </div>
     );
   }

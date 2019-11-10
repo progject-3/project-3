@@ -81,7 +81,7 @@ class App extends Component {
             <Signup />}
         />
  
-            <Route exact path ="/specificPage/:id" component={IndividualPage} />
+            <Route exact path ="/specificPage" component={IndividualPage} />
             {/* <Route component={NoMatch} /> */}
       </div>
     );
