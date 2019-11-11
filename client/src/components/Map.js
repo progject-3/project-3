@@ -8,6 +8,7 @@ import {
 } from 'react-google-maps';
 import Geocode from 'react-geocode';
 import Autocomplete from 'react-google-autocomplete';
+// import ResultList from "./search/SearchForm";
 Geocode.setApiKey('AIzaSyDxTdbiQM9NRtUgYe3cYN86iuXIleDgb04');
 Geocode.enableDebug();
 
