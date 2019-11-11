@@ -1,13 +1,13 @@
 import React, { Component } from 'react';
 import axios from 'axios'
-import { Route } from 'react-router-dom'
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 // components
 import Signup from './components/sign-up'
 import LoginForm from './components/login-form'
 import Navbar from './components/navbar'
 import Home from './components/home'
 import IndividualPage from './components/search/IndividualPage';
-// import NoMatch from "./components/search/NoMatch";
+import NoMatch from "./components/search/NoMatch";
 
 class App extends Component {
   constructor() {
@@ -56,6 +56,7 @@ class App extends Component {
 
   render() {
     return (
+      <Router>
       <div className="App">
 
         <Navbar updateUser={this.updateUser} loggedIn={this.state.loggedIn} />
@@ -64,6 +65,7 @@ class App extends Component {
           <p>Join the party, {this.state.firstName}!</p>
         }
         {/* Routes to different components */}
+        <Switch>
         <Route
           exact path="/"
           component={Home} />
@@ -82,8 +84,10 @@ class App extends Component {
         />
  
             <Route exact path ="/specificPage" component={IndividualPage} />
-            {/* <Route component={NoMatch} /> */}
+            <Route component={NoMatch} />
+            </Switch>
       </div>
+      </Router>
     );
   }
 }
