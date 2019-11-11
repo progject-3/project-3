@@ -5,6 +5,10 @@ import { Col, Row } from "./Grid.js";
 import "./Styles/Home.css";
 // import IndividualPage from './search/IndividualPage';
 class Home extends Component {
+  state = {
+    searchStuff: ''
+  };
+
   render() {
     const imageStyle = {
       width: '50%',
