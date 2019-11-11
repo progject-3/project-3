@@ -15,7 +15,8 @@ class App extends Component {
     this.state = {
       loggedIn: false,
       username: null,
-     firstName: null //? this for first name to show up
+      firstName: null, //? this for first name to show up
+     style: "dark"
     }
 
     this.getUser = this.getUser.bind(this)
@@ -57,7 +58,17 @@ class App extends Component {
   render() {
     return (
       <Router>
-      <div className="App">
+        <div className="App">
+          {/* {
+            if (this.state.style === "dark") (
+            <style>
+            {dstyles}
+            </style>
+          ) else (
+          <style>
+            {lstyles}
+          </style>
+          )} */}
 
         <Navbar updateUser={this.updateUser} loggedIn={this.state.loggedIn} />
         {/* greet user if logged in: */}

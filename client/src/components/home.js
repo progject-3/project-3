@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import HomeMap from './HomeMap';
 import SearchResultContainer from './search/SearchResultContainer';
-import { Col, Row } from './Grid.js';
+import { Col, Row } from "./Grid.js";
+import "./Styles/Home.css";
 // import IndividualPage from './search/IndividualPage';
 class Home extends Component {
   state = {
@@ -13,21 +14,26 @@ class Home extends Component {
       width: '50%',
       height: '50%'
     };
+   
     return (
-      <div>
-        <p>It's good to be home</p>
-        <img
+     
+      
+      <div className="homePage"> 
+        <p>This is some text for now... or maybe for future too</p>
+        {/* <img
           style={imageStyle}
           alt='home'
           src='https://i.ytimg.com/vi/N1icEHtgb3g/maxresdefault.jpg'
-        />
-        <Row>
-          <Col size='md-6'>
-            <HomeMap search={this.state.searchStuff} />
-          </Col>
-          <Col size='md-6'>
-            <SearchResultContainer search={this.state.searchStuff} />
-          </Col>
+        /> */}
+         <Row>
+          <Col size="md-6">
+
+          <HomeMap />
+      </Col >
+      <Col size="md-6">
+     
+        <SearchResultContainer /> 
+        </Col >
         </Row>
       </div>
     );
@@ -35,26 +41,3 @@ class Home extends Component {
 }
 
 export default Home;
-
-// // import React, { Component } from 'react';
-// import './Styles/Home.css';
-// // import SearchResultContainer from '../components/search/SearchResultContainer';
-
-// class Home extends Component {
-//   render() {
-//     const imageStyle = {
-//       width: 400
-//     };
-//     return (
-//       <div>
-//         <p>It's good to be home</p>
-//         <img
-//           style={imageStyle}
-//           alt='home'
-//           src='https://i.ytimg.com/vi/N1icEHtgb3g/maxresdefault.jpg'
-//         />
-//
-//       </div>
-//     );
-//   }
-// }
