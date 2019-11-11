@@ -2,6 +2,14 @@ import React, { Component } from 'react';
 import Map from './Map';
 // import resultList from './search/';
 class Home extends Component {
+  state = {
+    search: ''
+  };
+  componentDidMount() {
+    this.setState({
+      search: this.props.searchStuff
+    });
+  }
   render() {
     return (
       <div style={{ margin: '50px' }}>
