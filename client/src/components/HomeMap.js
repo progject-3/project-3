@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Map from './Map';
+import './Styles/Home.css'
 // import resultList from './search/';
 class Home extends Component {
   state = {
@@ -12,6 +13,7 @@ class Home extends Component {
   }
   render() {
     return (
+      <div className="homePage">
       <div style={{ margin: '50px' }}>
         {' '}
         <Map
@@ -26,6 +28,7 @@ class Home extends Component {
         >
           search
         </button>
+      </div>
       </div>
     );
   }
