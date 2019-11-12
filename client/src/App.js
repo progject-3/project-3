@@ -9,6 +9,7 @@ import Home from './components/home'
 import IndividualPage from './components/search/IndividualPage';
 import NoMatch from "./components/search/NoMatch";
 
+
 class App extends Component {
   constructor() {
     super()
