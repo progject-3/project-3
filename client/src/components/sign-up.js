@@ -25,9 +25,6 @@ import { validateAll } from 'indicative/validator';
   
 // 	return valid;
 //   };
-
-
-
 class Signup extends Component {
 	state = {
 		username: '',
