@@ -3,7 +3,7 @@ import HomeMap from "../HomeMap";
 import "./Style/Result.css";
 function SearchForm(props) {
   return (
-    <form>
+    <form className="everything">
       <div className="form-group">
         <label htmlFor="search"></label>
         <input
@@ -17,8 +17,7 @@ function SearchForm(props) {
           id="ZIP"
           size="6"
           maxlength="5"
-        />
-        <button onClick={props.handleFormSubmit} className="buttonss ">
+        /> <button onClick={props.handleFormSubmit} className="buttonss ">
           Search
         </button>
       </div>

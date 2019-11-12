@@ -84,7 +84,7 @@ class LoginForm extends Component {
                                 />
                             
                             <button
-                                className="btn btn-primary"
+                                className="btn-btn-btn"
 
                                 onClick={this.handleSubmit}
                                 type="submit">Login</button>
