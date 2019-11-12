@@ -14,6 +14,8 @@ class IndividualPage extends Component {
                             <img src={this.props.location.state[2]} alt="picture" />
                         </div>
                     </div>
+                    <button onclick="href='/'">Continue</button>
+                            <button href="/">go back</button>
 
                 </div>
                 <h2>{this.props.location.state[0]}</h2>
