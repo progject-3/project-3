@@ -10,10 +10,11 @@ class ResultList extends Component {
       id: '',
       location: '',
       imageURL: '',
-      zipcode: ''
+      zipcode: '',
+      price: ''
     };
   }
-  renderPage = (id, location, url, zipcode) => {
+  renderPage = (id, location, url, zipcode , price) => {
     // console.log("clicked on image")
     // console.log("url: " +url);
     // console.log(id);
@@ -22,14 +23,15 @@ class ResultList extends Component {
       id: id,
       location: location,
       imageURL: url,
-      zipcode: zipcode
+      zipcode: zipcode,
+      price: price
     });
   };
 
   render() {
     if (this.state.redirectTo) {
       return (
-        <Redirect to={{ pathname: this.state.redirectTo, state: [this.state.id, this.state.location, this.state.imageURL, this.state.zipcode] }} />
+        <Redirect to={{ pathname: this.state.redirectTo, state: [this.state.id, this.state.location, this.state.imageURL, this.state.zipcode, this.state.price] }} />
       )
 
     } else {
@@ -42,7 +44,7 @@ class ResultList extends Component {
                 {this.props.results.map(result => (
                   <li className="list  box" key={result.recordid}>
                     <div className="img-container">
-                      <img alt={result.fields} className="box-img-top box-height" src={result.fields.picture_url} onClick={() => { this.renderPage(result.recordid, result.fields.host_location, result.fields.picture_url, result.fields.zipcode) }} />
+                      <img alt={result.fields} className="box-img-top box-height" src={result.fields.picture_url} onClick={() => { this.renderPage(result.recordid, result.fields.host_location, result.fields.picture_url, result.fields.zipcode, result.fields.price) }} />
                     </div>
                     <p> <i class="fas fa-dollar-sign"></i> {result.fields.price} | <i class="fas fa-bed"></i> {result.fields.bedrooms} | <i class="fas fa-shower"></i> {result.fields.bathrooms}</p>
                     <p>{result.fields.street}</p>
