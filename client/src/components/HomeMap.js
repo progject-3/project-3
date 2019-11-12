@@ -1,10 +1,10 @@
-import React, { Component } from 'react';
-import Map from './Map';
-import './Styles/Home.css'
+import React, { Component } from "react";
+import Map from "./Map";
+import "./Styles/Home.css";
 // import resultList from './search/';
 class Home extends Component {
   state = {
-    search: ''
+    search: ""
   };
   componentDidMount() {
     this.setState({
@@ -14,21 +14,15 @@ class Home extends Component {
   render() {
     return (
       <div className="homePage">
-      <div style={{ margin: '50px' }}>
-        {' '}
-        <Map
-          google={this.props.google}
-          center={{ lat: 41.9245071073, lng: -87.6938524022 }}
-          height='300px'
-          zoom={15}
-        />{' '}
-        <button
-          google={this.props.google}
-          center={{ lat: 41.9245071073, lng: -87.6938524022 }}
-        >
-          search
-        </button>
-      </div>
+        <div style={{ margin: "50px" }}>
+          {" "}
+          <Map
+            google={this.props.google}
+            center={{ lat: 41.9245071073, lng: -87.6938524022 }}
+            height="300px"
+            zoom={15}
+          />{" "}
+        </div>
       </div>
     );
   }
