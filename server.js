@@ -46,5 +46,5 @@ app.use('/user', user)
 
 // Starting Server 
 app.listen(PORT, () => {
-    console.log(`App listening on PORT: ${PORT}`)
+    console.log(`🌎  ==> API Server now listening on PORT ${PORT}!`);
 })
