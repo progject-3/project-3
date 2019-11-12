@@ -61,10 +61,10 @@ class LoginForm extends Component {
             return (
                 <div className="wrapperl">
                     <br></br>
-                    <h4>Login</h4>
+                    <h4 className="login-1">Login</h4>
                     <form>
                         <div className="form-wrapperl">
-                                <label className="form-labell" htmlFor="username">Username: </label>
+                                <label className="form-labell" htmlFor="username">Username</label>
                                 <input className="form-inputl"
                                     type="text"
                                     id="username"
@@ -74,7 +74,7 @@ class LoginForm extends Component {
                                     onChange={this.handleChange}
                                 />
                             
-                                <label className="form-labell" htmlFor="password">Password: </label>
+                                <label className="form-labell" htmlFor="password">Password</label>
                                 <input className="form-inputl"
                                     placeholder="Password"
                                     type="password"

@@ -35,7 +35,7 @@ class Navbar extends Component {
     console.log(this.props);
 
         return (
-            <div>
+            <div className="backgrounds">
 
                 <header className="navbar navbar-expand-sm" id="nav-container">
                     <div className="navbar-brand" >

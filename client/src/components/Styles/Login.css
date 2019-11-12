@@ -7,8 +7,9 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        background-image: url('https://pixabay.com/get/57e8d5474e55a514ea9d8d79c328337f1022dfe054527449712f7fd6/chicago-1804479.jpg');
+        background-image: url('./Images/chicago-log.jpg');
     background-size: cover;
+    color: whitesmoke;
       } 
        
       .form-wrapperl{
@@ -25,6 +26,7 @@
        backdrop-filter: blur();
       }
       
+
        /* form{
         width: 100%;
         display: flex;
@@ -39,14 +41,16 @@
     
 
       .form-inputl[type=text],.form-inputl[type=password]{
-          /* border: 1px solid red; */
+          border: 0.5px solid black;
           margin: 3px;
           width: 200px;
           float: right;
           bottom: 30px;
           font-size: 0.8em;
           font-style: italic;
-          
+          opacity: 80%;
+          border-radius: 8px;
+          outline: red;
       }
       .btn{
           position: relative;
