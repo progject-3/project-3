@@ -18,7 +18,7 @@ function SearchForm(props) {
           size="6"
           maxlength="5"
         />
-        <button onClick={props.handleFormSubmit} className="buttonss ">
+        <button onClick={props.handleFormSubmit} className="btn btn-primary ">
           Search
         </button>
       </div>

@@ -19,6 +19,7 @@ class IndividualPage extends Component {
                 <h2>{this.props.location.state[0]}</h2>
                 <h2>{this.props.location.state[1]}</h2>
                 <h2>{this.props.location.state[3]}</h2>
+                <h2><i class="fas fa-dollar-sign"></i> {this.props.location.state[4]}</h2>
                 <Datepicker/>
             </div>
         )

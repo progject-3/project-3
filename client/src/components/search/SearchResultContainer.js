@@ -53,21 +53,7 @@ class SearchResultContainer extends Component {
       return true;
     }
   }
-  // validZip = zip =>{
-  //   if (zip.match(/^[0-9]{5}$/)) {
-  //     return true;
-  //   }
-  //   zip = zip.toUpperCase();
-  //   if (zip.match(/^[A-Z][0-9][A-Z][0-9][A-Z][0-9]$/)) {
-  //     return true;
-  //   }
-  //   if (zip.match(/^[A-Z][0-9][A-Z].[0-9][A-Z][0-9]$/)) {
-  //     return true;
-  //   }
-  // //   alert('*** Please enter a valid zip code.');
-  // //   return false;
-  //  }
-
+  
   render() {
     return (
       <div>
