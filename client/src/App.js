@@ -10,6 +10,7 @@ import IndividualPage from './components/search/IndividualPage';
 import NoMatch from "./components/search/NoMatch";
 
 
+
 class App extends Component {
   constructor() {
     super()
@@ -96,6 +97,7 @@ class App extends Component {
         />
  
             <Route exact path ="/specificPage" component={IndividualPage} />
+          
             <Route component={NoMatch} />
             </Switch>
       </div>

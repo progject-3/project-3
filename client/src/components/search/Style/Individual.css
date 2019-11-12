@@ -75,3 +75,17 @@ img{
 
 
 .hello {display: none}
+
+
+.mywrapper {
+    padding-top: 50px;
+    height: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    padding: 0;
+    justify-content: space-around;
+    align-content: flex-start;
+    overflow: auto;
+    background-color: white;
+    border: white;
+  }
