@@ -1,12 +1,4 @@
-.homePages {
-  background-image: url("https://pixabay.com/get/57e8d5474e55a514ea9d8d79c328337f1022dfe054527449712f7fd6/chicago-1804479.jpg");
-  background-size: cover;
-}
-.tag {
-  background-image: url("https://pixabay.com/get/57e8d5474e55a514ea9d8d79c328337f1022dfe054527449712f7fd6/chicago-1804479.jpg");
-
-  font-size: 26px;
-  font-style: italic;
-  color: rgb(244, 248, 2);
-  text-shadow: 0 0 3px #ff0000, 0 0 5px #06f74e;
+.homePage{
+    background-image: url('./Images/chicago-home.jpg');
+background-size: cover;
 }

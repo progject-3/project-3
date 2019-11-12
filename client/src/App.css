@@ -4,28 +4,48 @@
 }
 
 .navbar{
-  border-bottom: 4px solid gray;
+  border-bottom: 2px solid rgb(158, 129, 129);
   padding: 0;
- height: 35px;
- margin: auto;
+  height: 35px;
+  margin: 0;
+  
 }
 .nav-link, .fa-home{
   font-size: 12pt;
   padding: 0;
   margin-left: 5px;
-  color: rgb(95, 15, 170);
+  color: white;
   font-family: Comic Sans MS Header;
   height: 35px;
- 
- 
+  
+  
 }
 .nav-link-logout{
   position: relative;
- margin-left: 1030px;
- font-size: 10pt;
- 
+  margin-left: 1150px;
+  font-size: 10pt;
+  
   
 } 
+.backgrounds{
+      position: absolute;
+      width: 100%;
+      background: yellow;
+      background: transparent;
+      backdrop-filter: blur(15px); 
+    }
+
+.tagName{
+  position: absolute;
+  text-align: center;
+  color: whitesmoke;
+  top: 40px;
+  left: 45%;
+
+}
+.nav-link-logout{
+color: whitesmoke;
+}
 /* @media screen and (max-width: 500px) {
   .navbar {
     float: none;

@@ -25,9 +25,6 @@ import { validateAll } from 'indicative/validator';
   
 // 	return valid;
 //   };
-
-
-
 class Signup extends Component {
 	state = {
 		username: '',
@@ -70,7 +67,7 @@ class Signup extends Component {
 			password_confirmation: 'same:password',
 			firstName: 'required|string',
 			lastName: 'required|string',
-			age: 'required|above:18',
+			age: 'required|above:17',
 			// email: '',
 			// phone: '',
 		}
@@ -160,7 +157,7 @@ class Signup extends Component {
 								) : (null)}</div>
 							
 						
-								<label className="form-label" htmlFor="password">Password: </label>
+								<label className="form-label" htmlFor="password">Password </label>
 								<input className="form-input"
 									placeholder="password"
 									type="password"
@@ -180,7 +177,7 @@ class Signup extends Component {
 
 							
 						
-								<label className="form-label" htmlFor="password">Confirm Password: </label>
+								<label className="form-label" htmlFor="password">Confirm </label>
 								<input className="form-input"
 									placeholder="Confirm Password"
 									type="password"

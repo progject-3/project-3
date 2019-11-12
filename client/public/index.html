@@ -9,6 +9,7 @@
   <meta name="description" content="Web site created using create-react-app" />
   <link rel="apple-touch-icon" href="logo192.png" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">  <!--this is for fon family  https://fonts.google.com/ -->
+  <link href="https://fonts.googleapis.com/css?family=Supermercado+One|ZCOOL+KuaiLe&display=swap" rel="stylesheet"> <!--this is for font family-->
   <script src="https://kit.fontawesome.com/a076d05399.js"></script>
   <!--
       manifest.json provides metadata used when your web app is installed on a
@@ -36,6 +37,7 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
     integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
     crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./style.css">
 </head>
 
 <body>
@@ -51,6 +53,19 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
+    
+      <form id="myForm">
+        <h5 class="cal-tag">Calculator</h5>
+        Price: <input type="number" id="firstNumber" /><br>
+        Days: <input type="number" id="secondNumber" /><br>
+        <input type="button" value="Reset" onclick="reset()"/>
+        <input type="button" onClick="multiplyBy()" Value="Multiply" /><br>
+        <!-- <input type="button" onClick="divideBy()" Value="Divide" /><br> -->
+        
+        <h5>Total is: <span id="result" type="number" disabled=disabled></span></h5>
+      </form>
+    
+   
 
   <footer class="footer">
 
@@ -71,7 +86,7 @@
       bottom: 0;
       width: 100%;
       background-color: rgb(79, 121, 238);
-      color: black;
+      color: whitesmoke;
       border-top: 3px solid gray;
       font-size: 8pt;
       text-align: center;
@@ -79,11 +94,13 @@
      background: transparent;
      backdrop-filter: blur(5px);
      
+     
       /* position: sticky; */
       /* display: flex;
         width: 100%; */
     }
   </style>
+  <script src="./app.js"></script>
 </body>
 
 </html>

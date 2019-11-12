@@ -1,0 +1,62 @@
+body{
+   
+    background:url('./chicago/chicago-01chicago-015638521_7661c21019_o.jpg');
+    background-size: cover;
+}
+
+#result{
+width: 70px;
+}
+input[type=button]{
+    margin: 0;
+    border-radius: 10px;
+    outline: none;
+    
+}
+input[Value=Multiply]{
+background: limegreen;
+}
+
+input[value=Reset]{
+    background-color: red;
+}
+#myForm{
+    text-align: center;
+    border: 1px solid black;
+    width: 250px;
+    float: right;
+    margin-bottom:  40px;
+    margin-right: 10px;
+    padding: 3px;
+    border-radius: 15px;
+    background: transparent;
+    box-shadow: 0px 0px 60px rgb(46, 43, 43);
+    backdrop-filter: blur(2px);
+    color: white;
+
+  
+}
+input[id=result]{
+    text-align: center;
+    background: rgb(255, 193, 171);
+    border-radius: 10px;
+}
+input[type=number] {
+    border-radius: 10px;
+    outline: none;
+    text-align: center;
+    width: 60px;
+    -webkit-transition: width 1s ease-in-out;
+    transition: width 1s ease-in-out;
+  }
+  input[id=firstNumber]:focus {
+    width: 110px;
+  }
+  input[id=secondNumber]:focus {
+    width: 80px;
+  }
+  .cal-tag{
+    font-family: 'Supermercado One', cursive;
+  }
+
+ 
