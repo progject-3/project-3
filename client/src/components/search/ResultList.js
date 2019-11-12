@@ -1,18 +1,17 @@
-import React, { Component } from "react";
-import { Redirect } from "react-router-dom";
-import "./Style/Result.css";
+import React, { Component } from 'react';
+import { Redirect } from 'react-router-dom';
+import './Style/Result.css';
 // import { Col, Row } from "../Grid";
 class ResultList extends Component {
   constructor() {
     super();
     this.state = {
       redirectTo: null,
-      id: "",
-      location: "",
-      imageURL: "",
-      zipcode: ""
-
-    }
+      id: '',
+      location: '',
+      imageURL: '',
+      zipcode: ''
+    };
   }
   renderPage = (id, location, url, zipcode) => {
     // console.log("clicked on image")
@@ -24,9 +23,8 @@ class ResultList extends Component {
       location: location,
       imageURL: url,
       zipcode: zipcode
-    })
+    });
   };
-
 
   render() {
     if (this.state.redirectTo) {
@@ -37,7 +35,7 @@ class ResultList extends Component {
     } else {
       return (
         <div className="overflowTest">
-          <div className="wrapper">
+          <div className="mywrapper">
 
             <ul className="center">
               <div className="row">
@@ -60,10 +58,8 @@ class ResultList extends Component {
           </div>
         </div>
       );
-
     }
   }
-
 }
 
 export default ResultList;

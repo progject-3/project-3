@@ -139,9 +139,9 @@ class Signup extends Component {
 		} else {
 			return (
 				<div className="wrapper">
-					<h4>Sign up</h4>
 					<form className="form-inline">
 						<div className="form-wrapper">
+					<h4 className="signUp">Sign up</h4>
 								<label className="form-label" htmlFor="username">Username</label>
 								<input className="form-input"
 									type="text"

@@ -6,10 +6,10 @@
     border: 3px solid #d7d7d7;
     /* box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23); */
     cursor: pointer;
-    height: 50%;
+    height: 250px;
     margin: 15px;
     overflow: hidden;
-    width: 40%;
+    width: 45%;
     font-size: 15px;
     
   }
@@ -23,7 +23,7 @@
   .box-img-top {
     border-radius: 0;
    
-    height: 100px !important;
+    height: 150px !important;
   }
   
   .box-height {
@@ -32,7 +32,7 @@
   
 
 
-.wrapper {
+.mywrapper {
     padding-top: 50px;
     height: 100%;
     display: flex;
@@ -53,10 +53,10 @@
     /* border: 1px solid #ccc; */
   }
 
- /* li .center {
-    margin: auto;
-  
-  } */
+  .center {
+    margin: center;
+    width: 100%;
+  }
   
 .row {margin: 0 -5px;}
 

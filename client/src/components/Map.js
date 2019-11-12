@@ -224,6 +224,7 @@ class Map extends Component {
   };
 
   render() {
+  
     const AsyncMap = withScriptjs(
       withGoogleMap(props => (
         <GoogleMap
