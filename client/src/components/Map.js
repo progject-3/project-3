@@ -222,6 +222,7 @@ class Map extends Component {
         lng: lngValue
       }
     });
+    this.props.userData(this.state);
   };
 
   render() {
@@ -272,6 +273,7 @@ class Map extends Component {
             //   marginBottom: "70px"
             // }}
             onPlaceSelected={this.onPlaceSelected}
+            // handleUserInfo={() => this.handleUserInfo("this.state")}
             types={["(regions)"]}
           />
         </GoogleMap>
@@ -282,7 +284,8 @@ class Map extends Component {
     if (this.props.center.lat !== undefined) {
       map = (
         <div className="mapmargin">
-          <AsyncMap className="map-framing"
+          <AsyncMap
+            className="map-framing"
             googleMapURL="https://maps.googleapis.com/maps/api/js?key=AIzaSyDxTdbiQM9NRtUgYe3cYN86iuXIleDgb04&libraries=places"
             loadingElement={<div style={{ height: `100%` }} />}
             containerElement={<div style={{ height: this.props.height }} />}

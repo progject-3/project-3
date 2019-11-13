@@ -6,7 +6,17 @@ import "./Styles/Home.css";
 // import IndividualPage from './search/IndividualPage';
 class Home extends Component {
   state = {
-    searchStuff: ""
+    searchStuff: "",
+    zip: ""
+  };
+  componentDidMount() {}
+  userData = data => {
+    // console.log(zip.address.split(", ")[1].split(" ")[1]);
+
+    this.setState({
+      zip: data.address.split(", ")[1].split(" ")[1]
+    });
+    console.log(this.state.zip);
   };
 
   render() {
@@ -25,10 +35,11 @@ class Home extends Component {
         /> */}
         <Row>
           <Col size="md-6">
-            <HomeMap />
+            <HomeMap userData={this.userData} />
           </Col>
+          {/* {this.state.zip} */}
           <Col size="md-6">
-            <SearchResultContainer />
+            <SearchResultContainer zip={this.state.zip} />
           </Col>
         </Row>
       </div>

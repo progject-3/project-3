@@ -10,7 +10,9 @@ class Home extends Component {
     this.setState({
       search: this.props.searchStuff
     });
+    console.log(this.props);
   }
+
   render() {
     return (
       <div className="homePage">
@@ -21,6 +23,7 @@ class Home extends Component {
             center={{ lat: 41.9245071073, lng: -87.6938524022 }}
             height="300px"
             zoom={15}
+            userData={this.props.userData}
           />{" "}
         </div>
       </div>
