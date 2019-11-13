@@ -82,7 +82,8 @@ function Day({ dayLabel, date }) {
       type="button"
       ref={dayRef}
       css={{
-        padding: "8px",
+        padding: "5",
+        paddingInline:'0',
         border: 0,
         color: getColorFn({
           selectedFirstOrLastColor: "#FFFFFF",

@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import "./Style/Individual.css";
-import Datepicker from '../Calendar/Datepicker'
+// import Datepicker from '../Calendar/Datepicker'
 import New from '../Calendar/New'
 import Calculate from '../Calculator/index'
 class IndividualPage extends Component {
@@ -20,24 +20,22 @@ class IndividualPage extends Component {
                     <button href="/">go back</button>
 
                 </div>
-                <h2>{this.props.location.state[0]}</h2>
-                <h2>{this.props.location.state[1]}</h2>
-                <h2>{this.props.location.state[3]}</h2>
-                <h2><i className="fas fa-dollar-sign"></i> {this.props.location.state[4]}</h2>
-
+                <div className="after-image">
+                    <h2>{this.props.location.state[0]}</h2>
+                    <h2>{this.props.location.state[1]}</h2>
+                    <h2>{this.props.location.state[3]}</h2>
+                    <h2><i className="fas fa-dollar-sign"></i> {this.props.location.state[4]}</h2>
+                </div>
                 <div className="mywrapper">
 
-                    <Datepicker />
+                   
 
                     <Calculate />
-                    <a href="javascript:document.location.reload();"
-ONMOUSEOVER="window.status='Refresh'; return true"
-ONMOUSEOUT="window.status='ah... that was good'">
-<img src="https://icon-library.net/images/refresh-button-icon/refresh-button-icon-13.jpg" 
-width="10" height="10" border="0" /></a>
-
+                    
+                
                 </div>
                 <New/>
+             
                 {/* <button value="Refresh Page" onClick={window.location.href=window.location.href}>boom</button> */}
                 <form action="https://formspree.io/zaid.fadel89@yahoo.com" method="POST">
                     <label for="name">name</label>

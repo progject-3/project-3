@@ -5,6 +5,7 @@ import { jsx } from "@emotion/core";
 import Month from "./Month";
 import NavButton from "./NavButton";
 import DatepickerContext from "./datepickerContext";
+
 function Datepicker() {
   const [state, setState] = useState({
     startDate: new Date(Date.now()),
@@ -70,9 +71,9 @@ function Datepicker() {
       <div
         css={{
           display: "grid",
-          margin: "32px 0 0",
+          margin: "22px 0 0",
           gridTemplateColumns: `repeat(${activeMonths.length}, 300px)`,
-          gridGap: "0 64px"
+          gridGap: "0 22px"
         }}
       >
         {activeMonths.map(month => (
