@@ -8,6 +8,7 @@ import Navbar from './components/navbar'
 import Home from './components/home'
 import IndividualPage from './components/search/IndividualPage';
 import NoMatch from "./components/search/NoMatch";
+import "./App.css"
 
 
 

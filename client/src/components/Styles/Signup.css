@@ -64,8 +64,8 @@ height: 100vh;
       float: right;
       bottom: 30px;
       font-size: 0.8em;
-      border-top-left-radius: 13px;
-      border-bottom-right-radius: 13px;
+      border-radius: 13px;
+      /* border-bottom-right-radius: 13px; */
       opacity: 80%;
     /* background: transparent;
     backdrop-filter: blur(10px); */
@@ -103,11 +103,44 @@ height: 100vh;
       border-radius: 5px;
       opacity: 80%;
       /* background: transparent; */
-      /* left: 250px; */
-      
-      
-      
+      /* left: 250px; */  
   }
+
+
+@media screen and (max-width: 415px) {
+  .form-wrapper{
+    width: auto;
+    margin: auto;
+}
+.form-input[type=text],.form-input[type=password],.form-input[type=number]{
+  border: 0.5px solid black;
+      margin: 0;
+      width: 290px;
+      position: relative;
+
+      
+      bottom: 30px;
+      font-size: 0.9em;
+      background: lightcyan;
+      
+}
+.form-label {
+    font-size: 00.01pt;   
+  /* border: 1px solid black; */
+  /* display: none;
+  margin: 6px; */
+ /* color:whitesmoke; */
+ /* font-size: bold; */
+ /* text-align: right; */
+ /* display: inline-block; */
+ /* width: 106px;
+ font-size: 0.9em;
+ position: relative;
+ color: whitesmoke;
+ top: 40px; */
+ 
+}
+}
 
   /* .form-element label {
     display: inline-block;

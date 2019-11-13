@@ -22,7 +22,7 @@ img{
     border: 1px ;
     overflow: hidden;
     position: relative;
-    /* float: left; */
+   
     display: inline-block;
     cursor: pointer;
 }
@@ -89,9 +89,9 @@ img{
     justify-content: space-around;
     align-content: flex-start;
     overflow: auto;
-    background-color: white;
-    border: black 2px solid;
-    background: lightcyan;
+    /* background-color: white; */
+    /* border: black 2px solid;
+    background: lightcyan; */
     border-radius: 19px;
 
   }
@@ -104,8 +104,8 @@ color: white;
       height: 2px;
   } */
 
-button.css-ra7cqo-Day {
+/* button.css-ra7cqo-Day {
       padding: 5px;
   }
 
- 
+  */
