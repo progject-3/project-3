@@ -4,8 +4,8 @@ import ScotchInfoBar from './ScotchInfoBar';
 import './Styles.css';
 
 function Calculate() {
-  const [number1, setNumber1] = useState();
-  const [number2, setNumber2] = useState();
+  const [number1, setNumber1] = useState(0);
+  const [number2, setNumber2] = useState(0);
   const [total, setTotal] = useState(number1 + number2);
 
   function calculateTotal() {
@@ -21,13 +21,13 @@ function Calculate() {
           type="number"
           value={number1}
           onChange={e => setNumber1(+e.target.value)}
-          placeholder="0"
+          placeholder="days"
         />
         <input
           type="number"
           value={number2}
           onChange={e => setNumber2(+e.target.value)}
-          placeholder="0"
+          placeholder="price"
         />
       </div>
 
