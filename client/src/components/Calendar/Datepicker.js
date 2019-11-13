@@ -7,8 +7,8 @@ import NavButton from "./NavButton";
 import DatepickerContext from "./datepickerContext";
 function Datepicker() {
   const [state, setState] = useState({
-    startDate: null,
-    endDate: null,
+    startDate: new Date(Date.now()),
+    endDate: new Date(Date.now()),
     focusedInput: START_DATE
   });
   const {

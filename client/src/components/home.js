@@ -1,7 +1,5 @@
 import React, { Component } from "react";
 import HomeMap from "./HomeMap";
-import maping from "./Styles/maping.css";
-
 import SearchResultContainer from "./search/SearchResultContainer";
 import { Col, Row } from "./Grid.js";
 import "./Styles/Home.css";
