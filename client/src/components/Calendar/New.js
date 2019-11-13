@@ -47,6 +47,7 @@ function New() {
         startDate={state.startDate} // Date or null
         endDate={state.endDate} // Date or null
         focusedInput={state.focusedInput} // START_DATE, END_DATE or null
+        totale={`${state.endDate}-${state.startDate}`}
       />
     </ThemeProvider>
   );
