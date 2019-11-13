@@ -19,17 +19,18 @@ class IndividualPage extends Component {
                     <button href="/">go back</button>
 
                 </div>
-                <h2>{this.props.location.state[0]}</h2>
-                <h2>{this.props.location.state[1]}</h2>
-                <h2>{this.props.location.state[3]}</h2>
-                <h2><i className="fas fa-dollar-sign"></i> {this.props.location.state[4]}</h2>
-
+                <div className="after-image">
+                    <h2>{this.props.location.state[0]}</h2>
+                    <h2>{this.props.location.state[1]}</h2>
+                    <h2>{this.props.location.state[3]}</h2>
+                    <h2><i className="fas fa-dollar-sign"></i> {this.props.location.state[4]}</h2>
+                </div>
                 <div className="mywrapper">
 
                     <Datepicker />
 
                     <Calculate />
-                    
+
                 </div>
                 <form action="https://formspree.io/zaid.fadel89@yahoo.com" method="POST">
                     <label for="email">Email</label>
