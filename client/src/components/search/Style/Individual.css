@@ -79,8 +79,10 @@ img{
 
 
 .mywrapper {
+
     padding-top: 50px;
-    height: 100%;
+    height: 460px;
+    width: 600px;
     display: flex;
     flex-flow: row wrap;
     padding: 0;
@@ -88,5 +90,22 @@ img{
     align-content: flex-start;
     overflow: auto;
     background-color: white;
-    border: white;
+    border: black 2px solid;
+    background: lightcyan;
+    border-radius: 19px;
+
   }
+
+  /* ? style for "specificPage" after the image content */
+  .after-image{ 
+color: white;
+  }
+  /* button[tabindex=-1]{
+      height: 2px;
+  } */
+
+button.css-ra7cqo-Day {
+      padding: 5px;
+  }
+
+ 

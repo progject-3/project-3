@@ -16,10 +16,12 @@ function Month({ year, month, firstDayOfWeek }) {
       <div
         css={{
           display: "grid",
+          
+          
           gridTemplateColumns: "repeat(7, 1fr)",
           justifyContent: "center",
           marginBottom: "10px",
-          fontSize: "10px"
+          fontSize: "12pt"
         }}
       >
         {weekdayLabels.map(dayLabel => (
@@ -30,8 +32,10 @@ function Month({ year, month, firstDayOfWeek }) {
       </div>
       <div
         css={{
+          padding: "0",
           display: "grid",
           gridTemplateColumns: "repeat(7, 1fr)",
+          fontSize: '6pt',
           justifyContent: "center"
         }}
       >
