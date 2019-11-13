@@ -58,7 +58,7 @@
 color: whitesmoke;
 }
 
-@media screen and (max-width: 915px) {
+@media screen and (max-width: 415px) {
   .nav-link, .fa-home{
 color: greenyellow;
 text-align: center;
