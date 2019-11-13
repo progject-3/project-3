@@ -4,8 +4,8 @@ import ScotchInfoBar from './ScotchInfoBar';
 import './Styles.css';
 
 function Calculate() {
-  const [number1, setNumber1] = useState(0);
-  const [number2, setNumber2] = useState(0);
+  const [number1, setNumber1] = useState();
+  const [number2, setNumber2] = useState();
   const [total, setTotal] = useState(number1 + number2);
 
   function calculateTotal() {
