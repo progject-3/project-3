@@ -46,7 +46,7 @@ class ResultList extends Component {
                     <div className="img-container">
                       <img alt={result.fields} className="box-img-top box-height" src={result.fields.picture_url} onClick={() => { this.renderPage(result.recordid, result.fields.host_location, result.fields.picture_url, result.fields.zipcode, result.fields.price) }} />
                     </div>
-                    <p> <i class="fas fa-dollar-sign"></i> {result.fields.price} | <i class="fas fa-bed"></i> {result.fields.bedrooms} | <i class="fas fa-shower"></i> {result.fields.bathrooms}</p>
+                    <p> <i className="fas fa-dollar-sign"></i> {result.fields.price} | <i className="fas fa-bed"></i> {result.fields.bedrooms} | <i className="fas fa-shower"></i> {result.fields.bathrooms}</p>
                     <p>{result.fields.street}</p>
 
 
