@@ -34,37 +34,66 @@ class Navbar extends Component {
     console.log('navbar render, props: ');
     console.log(this.props);
 
-        return (
-            <div className="backgrounds">
-
-                <header className="navbar navbar-expand-sm" id="nav-container">
-                    <div className="navbar-brand" >
+    return (
+      <div className="backgrounds">
+        <header className="navbar App-header" id="nav-container">
+                    <div className="col-4" >
                         {loggedIn ? (
-                            <section className="collapse navbar-collapse">
-                                <Link to="#" className="nav-item active" onClick={this.logout}>
-                                    <span className="nav-link-logout"><i className="fas fa-sign-out-alt">logout</i></span></Link>
+                            <section className="navbar-section">
+                                <Link to="#" className="btn btn-link text-secondary" onClick={this.logout}>
+                                    <span className="text-secondary">logout</span></Link>
 
                             </section>
                         ) : (
-                                <section className="collapse navbar-collapse">
-                                    <Link to="/" className="nav-item active ">
-                                        <span className="nav-link"><i className="fas fa-home" aria-hidden="true"></i></span>
+                                <section className="navbar-section">
+                                    <Link to="/" className="btn btn-link text-secondary">
+                                        <span className="text-secondary">home</span>
                                     </Link>
-                                    <Link to="/login" className="nav-item active">
-                                        <span className="nav-link">Login <i className="fas fa-sign-in-alt"></i></span>
+                                    <Link to="/login" className="btn btn-link text-secondary">
+                                        <span className="text-secondary">login</span>
                                     </Link>
-                                    <Link to="/signup" className="nav-item active">
-                                        <span className="nav-link">Sign up <i className="fas fa-user-plus"></i></span>
+                                    <Link to="/signup" className="btn btn-link">
+                                        <span className="text-secondary">sign up</span>
                                     </Link>
                                 </section>
-                            )}
-                    </div>
-                </header>
-            </div>
 
-        );
+        /* <header className="navbar navbar-expand-sm" id="nav-container">
+          <div className="navbar-brand" >
+                <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                  <span className="navbar-toggler-icon"></span>
+                </button>
+            {loggedIn ? (
+              <section className="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
 
-    }
+                <Link to="#" className="nav-item active" onClick={this.logout}>
+                  <span className="nav-link-logout"><i className="fas fa-sign-out-alt">logout</i></span></Link>
+                </ul>
+
+
+              </section>
+            ) : (
+                <section className="collapse navbar-collapse" id="navbarNav">
+                  <ul class="navbar-nav">
+                  <Link to="/" className="nav-item active ">
+                    <span className="nav-link"><i className="fas fa-home" aria-hidden="true"></i></span>
+                  </Link>
+                  <Link to="/login" className="nav-item active">
+                    <span className="nav-link">Login <i className="fas fa-sign-in-alt"></i></span>
+                  </Link>
+                  <Link to="/signup" className="nav-item active">
+                    <span className="nav-link">Sign up <i className="fas fa-user-plus"></i></span>
+                  </Link>
+                  </ul>
+                </section> */
+              )}
+          </div>
+        </header>
+      </div>
+
+    );
+
+  }
 }
 
 export default Navbar;

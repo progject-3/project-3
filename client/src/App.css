@@ -2,7 +2,9 @@
  .App {
   text-align: center;
 }
-
+.text-secondary{
+  color: white;
+}
 .navbar{
   border-bottom: 2px solid rgb(158, 129, 129);
   padding: 0;
@@ -10,16 +12,25 @@
   margin: 0;
   
 }
-.nav-link, .fa-home{
-  font-size: 12pt;
+ .navbar-section{
+ font-size: 12pt;
   padding: 0;
   margin-left: 5px;
   color: white;
   font-family: Comic Sans MS Header;
-  height: 35px;
-  
-  
-}
+  height: 35px; 
+  position: relative;
+  bottom: 18px;
+ }
+/* .nav-link, .fa-home{ */
+  /* display: block; */
+  /* font-size: 12pt;
+  padding: 0;
+  margin-left: 5px;
+  color: white;
+  font-family: Comic Sans MS Header;
+  height: 35px; 
+} */
 .nav-link-logout{
   position: relative;
   margin-left: 1150px;
@@ -46,9 +57,16 @@
 .nav-link-logout{
 color: whitesmoke;
 }
+
+@media screen and (max-width: 415px) {
+  .nav-link, .fa-home{
+color: greenyellow;
+text-align: center;
+}
+}
 /* @media screen and (max-width: 500px) {
   .navbar {
-    float: none;
+    float: right;
     display: block;
     text-align: left;
   }
@@ -92,8 +110,4 @@ color: whitesmoke;
 
 } */
 
-/* @keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
-} */
 
