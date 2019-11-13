@@ -1,9 +1,10 @@
 import React, { Component } from 'react';
 import "./Style/Individual.css";
-import Datepicker from '../Calendar/Datepicker'
+// import Datepicker from '../Calendar/Datepicker'
+import New from '../Calendar/New'
 import Calculate from '../Calculator/index'
 class IndividualPage extends Component {
-
+   
     render() {
         return (
             <div>
@@ -27,15 +28,19 @@ class IndividualPage extends Component {
                 </div>
                 <div className="mywrapper">
 
-                    <Datepicker />
+                   
 
                     <Calculate />
-
+                    
+                
                 </div>
+                <New/>
+             
+                {/* <button value="Refresh Page" onClick={window.location.href=window.location.href}>boom</button> */}
                 <form action="https://formspree.io/zaid.fadel89@yahoo.com" method="POST">
-                    <label for="email">Email</label>
-                    <input type="text" className="email" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" />
-                    <label for="subject">Subject</label>
+                    <label for="name">name</label>
+                    <input type="text" className="name" name="name"  />
+                    <label for="phone">phone</label>
                     <input id="phonenum" type="tel" pattern="^\d{3}\d{3}\d{4}$" />
                     <label for="message">Message
                         <textarea className="message" name="message" style={{ height: "100px" }}>{this.props.location.state[1]}</textarea></label>
