@@ -21,7 +21,7 @@ class Home extends Component {
             center={{ lat: 41.9245071073, lng: -87.6938524022 }}
             height="300px"
             zoom={15}
-          />{" "}
+          />
         </div>
       </div>
     );

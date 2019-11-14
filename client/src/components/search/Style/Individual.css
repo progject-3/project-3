@@ -1,106 +1,110 @@
-
-img{
-    width: auto;
-    height: auto;
-    margin-top:30px;
+img {
+  width: auto;
+  height: auto;
+  margin-top: 30px;
 }
 .all {
-    padding: 5px 5px;
-   width: 1200px;
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-        margin-top: 10px;
+  padding: 5px 5px;
+  width: 1200px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
 }
 
-.right {float: right !important;}
+.right {
+  float: right !important;
+}
 /* Image zoom on hover + Overlay colour */
 .parent {
-    width: 80%;
-    margin: 20px;
-    height: 400px;
-    border: 1px ;
-    overflow: hidden;
-    position: relative;
-   
-    display: inline-block;
-    cursor: pointer;
+  width: 80%;
+  margin: 20px;
+  height: 400px;
+  border: 1px;
+  overflow: hidden;
+  position: relative;
+
+  display: inline-block;
+  cursor: pointer;
 }
 
 .child {
-    height: 100%;
-    width: 100%;
-    background-size: cover;
-    background-repeat: no-repeat;
-    -webkit-transition: all .5s;
-    -moz-transition: all .5s;
-    -o-transition: all .5s;
-    transition: all .5s;
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
 }
 
-
-
-
-.parent:hover .child, .parent:focus .child {
-    -ms-transform: scale(1.2);
-    -moz-transform: scale(1.2);
-    -webkit-transform: scale(1.2);
-    -o-transform: scale(1.2);
-    transform: scale(1.2);
+.parent:hover .child,
+.parent:focus .child {
+  -ms-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+  -o-transform: scale(1.2);
+  transform: scale(1.2);
 }
 
-.parent:hover .child:before, .parent:focus .child:before {
-    display: block;
+.parent:hover .child:before,
+.parent:focus .child:before {
+  display: block;
 }
 
-.parent:hover a, .parent:focus a {
-    display: block;
+.parent:hover a,
+.parent:focus a {
+  display: block;
 }
 
 .child:before {
-    content: "";
-    display: none;
-    height: 100%;
-    width: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    /* background-color: rgba(52,73,94,0.75); */
+  content: "";
+  display: none;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  /* background-color: rgba(52,73,94,0.75); */
 }
 
 /* Media Queries */
 @media screen and (max-width: 960px) {
-    .parent {width: 100%; margin: 20px 0px}
-        .all {padding: 20px 20px;}
+  .parent {
+    width: 100%;
+    margin: 20px 0px;
+  }
+  .all {
+    padding: 20px 20px;
+  }
 }
 
-
-.hello {display: none}
-
+.hello {
+  display: none;
+}
 
 .mywrapper {
-
-    padding-top: 50px;
-    height: 460px;
-    width: 600px;
-    display: flex;
-    flex-flow: row wrap;
-    padding: 0;
-    justify-content: space-around;
-    align-content: flex-start;
-    overflow: auto;
-    /* background-color: white; */
-    /* border: black 2px solid;
+  padding-top: 50px;
+  height: 460px;
+  width: 600px;
+  display: flex;
+  flex-flow: row wrap;
+  padding: 0;
+  justify-content: space-around;
+  align-content: flex-start;
+  overflow: auto;
+  /* background-color: white; */
+  /* border: black 2px solid;
     background: lightcyan; */
-    border-radius: 19px;
+  border-radius: 19px;
+}
 
-  }
-
-  /* ? style for "specificPage" after the image content */
-  .after-image{ 
-color: white;
-  }
-  /* button[tabindex=-1]{
+/* ? style for "specificPage" after the image content */
+.after-image {
+  color: white;
+}
+/* button[tabindex=-1]{
       height: 2px;
   } */
 

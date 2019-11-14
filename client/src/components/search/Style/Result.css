@@ -2,12 +2,12 @@
     max-width: 50%;
   }
    */
-   input[name=search]{
-     width: 300px;
-     position: relative;
-     text-align: center;
-    right: 135px;
-   }
+input[name="search"] {
+  width: 300px;
+  position: relative;
+  text-align: center;
+  right: 135px;
+}
 .box {
   border: 3px solid #d7d7d7;
   /* box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23); */
@@ -17,7 +17,6 @@
   overflow: hidden;
   width: 45%;
   font-size: 15px;
- 
 }
 
 .box:hover {
@@ -58,7 +57,7 @@
   border: 0.4px solid white;
   border-radius: 15px;
   backdrop-filter: blur(1px);
- 
+
   /* border: 1px solid #ccc; */
 }
 
@@ -84,7 +83,7 @@
   /* padding: .75rem 1.25rem; */
   margin-bottom: -1px;
   /* background-image: url('https://cdn.pixabay.com/photo/2017/11/04/21/09/textile-2918844_960_720.jpg'); */
-  background-image: url('./paper-1990111.jpg');
+  background-image: url("./paper-1990111.jpg");
   background-size: cover;
   color: black;
   border: 0 solid rgba(0, 0, 0, 0.125);
@@ -102,27 +101,25 @@
     border-radius: 1rem;
   } */
 .buttonss {
+  position: relative;
 
- position: relative;
- 
- margin-left: 78px;
- margin-bottom: 0px; 
- box-shadow: 3px 4px 0px 0px #4f36a7;
- background: linear-gradient(to bottom, #2bfa01 5%, #5337f2 100%);
- background-color: #0fe03d;
- border-radius: 18px;
- border: 1px solid #d018b8;
- display: inline-block;
- cursor: pointer;
- color: black;
- font-family: Arial;
- font-size: 17px;
- padding: 2px 15px;
- text-decoration: none;
- text-shadow: 0px 1px 0px #13c213;
- /* bottom: 1147px; */
- 
+  margin-left: 78px;
+  margin-bottom: 0px;
+  box-shadow: 3px 4px 0px 0px #4f36a7;
+  background: linear-gradient(to bottom, #2bfa01 5%, #5337f2 100%);
+  background-color: #0fe03d;
+  border-radius: 18px;
+  border: 1px solid #d018b8;
+  display: inline-block;
+  cursor: pointer;
+  color: black;
+  font-family: Arial;
+  font-size: 17px;
+  padding: 2px 15px;
+  text-decoration: none;
+  text-shadow: 0px 1px 0px #13c213;
+  /* bottom: 1147px; */
 }
-.everything{
+.everything {
   width: 100%;
 }

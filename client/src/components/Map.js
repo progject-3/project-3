@@ -264,13 +264,15 @@ class Map extends Component {
           {/* For Auto complete Search Box */}
           <Autocomplete
             className="auto"
-            style={{
-              // width: "100%",
-              // height: "40px",
-              // paddingLeft: "16px",
-              // marginTop: "2px",
-              // marginBottom: "70px"
-            }}
+            style={
+              {
+                // width: "100%",
+                // height: "40px",
+                // paddingLeft: "16px",
+                // marginTop: "2px",
+                // marginBottom: "70px"
+              }
+            }
             onPlaceSelected={this.onPlaceSelected}
             types={["(regions)"]}
           />
@@ -282,7 +284,8 @@ class Map extends Component {
     if (this.props.center.lat !== undefined) {
       map = (
         <div className="mapmargin">
-          <AsyncMap className="map-framing"
+          <AsyncMap
+            className="map-framing"
             googleMapURL="https://maps.googleapis.com/maps/api/js?key=AIzaSyDxTdbiQM9NRtUgYe3cYN86iuXIleDgb04&libraries=places"
             loadingElement={<div style={{ height: `100%` }} />}
             containerElement={<div style={{ height: this.props.height }} />}
