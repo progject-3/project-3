@@ -12,7 +12,9 @@ const userSchema = new Schema({
     lastName: { type: String, required: true },
     age: { type: String, required: true},
     email: { type: String },
-    phone: { type: String }
+    phone: { type: String },
+    // date1:{type:Date},
+    // date2:{type:Date}
     
 })
 
