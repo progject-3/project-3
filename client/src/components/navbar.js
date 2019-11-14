@@ -34,17 +34,18 @@ class Navbar extends Component {
     console.log('navbar render, props: ');
     console.log(this.props);
 
-    return (
-      
-      <div className="backgrounds">
-        <header className="navbar App-header" id="nav-container">
-                    <div className="col-4" >
-            {loggedIn ? (
-              
-                            <section className="navbar-section">
-                                <Link to="#" className="btn btn-link text-secondary" className="nav-link-logout" onClick={this.logout}>
-                                    <span className="text-secondary" className="c-logout"><i className="fas fa-sign-out-alt">logout</i></span></Link>
+        return (
+            <div className="backgrounds">
 
+                <header className="navbar navbar-expand-sm" id="nav-container">
+                    <div className="navbar-brand" >
+                        {loggedIn ? (
+                            <section className="collapse navbar-collapse">
+                                <Link to="#" className="nav-item active" onClick={this.logout}>
+                                    <span className="nav-link-logout"><i className="fas fa-sign-out-alt">logout</i></span></Link>
+                                    <Link to="/" className="nav-item active ">
+                                        <span className="nav-link"><i className="fas fa-home" aria-hidden="true"></i></span>
+                                    </Link>
                             </section>
                         ) : (
                                 <section className="navbar-section">

@@ -266,15 +266,13 @@ class Map extends Component {
           {/* For Auto complete Search Box */}
           <Autocomplete
             className="auto"
-            style={
-              {
-                // width: "100%",
-                // height: "40px",
-                // paddingLeft: "16px",
-                // marginTop: "2px",
-                // marginBottom: "70px"
-              }
-            }
+            style={{
+              width: "100%",
+              height: "40px",
+              paddingLeft: "16px",
+              marginTop: "2px",
+              marginBottom: "70px"
+            }}
             onPlaceSelected={this.onPlaceSelected}
             // handleUserInfo={() => this.handleUserInfo("this.state")}
             types={["(regions)"]}
@@ -359,7 +357,17 @@ class Map extends Component {
                 value={this.state.state}
               />
             </div> */}
-            
+            <div className="form-group">
+              <label htmlFor="">Address</label>
+              <input
+                type="text"
+                name="address"
+                className="form-control"
+                onChange={this.onChange}
+                readOnly="readOnly"
+                value={this.state.address}
+              />
+            </div>
           </div>
         </div>
       );
