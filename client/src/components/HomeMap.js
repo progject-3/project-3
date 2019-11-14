@@ -16,7 +16,7 @@ class Home extends Component {
   render() {
     return (
       <div className="homePage">
-        <div style={{ margin: "50px" }}>
+        <div style={{ margin: "30px" }}>
           {" "}
           <Map
             google={this.props.google}

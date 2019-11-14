@@ -4,3 +4,41 @@
 background-size: cover;
 backdrop-filter: blur(8px);
 } */
+/* .jumboPic{
+background-image: url('./Images/city-skyline-1209906.jpg');
+position: absolute;
+} */
+.tag{
+    
+    color: wheat;
+    font-size: 0pt;
+    /* position: relative; */
+    /* margin-top: 20px; */
+}
+
+ @media screen and (max-width: 390px) {
+  .mapmargin {
+      margin: auto;
+      position: relative;
+      height: 300px;
+     
+  border: 3px solid black;
+  }
+  .everything{
+      border: 3px solid black;
+      width: 200px;
+      margin: auto;
+  }
+  input[name=search]{
+      background: greenyellow;
+      position: relative;
+      margin-left: 170px;
+  }
+  .buttonss{
+      margin-top: 3px;
+      left: 59px;
+  }
+/* li {
+    border: 3px solid black;
+} */
+} 

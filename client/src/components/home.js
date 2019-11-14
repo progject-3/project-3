@@ -3,6 +3,7 @@ import HomeMap from "./HomeMap";
 import SearchResultContainer from "./search/SearchResultContainer";
 import { Col, Row } from "./Grid.js";
 import "./Styles/Home.css";
+
 // import IndividualPage from './search/IndividualPage';
 class Home extends Component {
   state = {
@@ -21,18 +22,23 @@ class Home extends Component {
 
   render() {
     const imageStyle = {
-      width: "50%",
-      height: "50%"
+      width: "70%",
+      height: "30%",
+      borderRadius: '8px',
+      boxShadow: "0px 0px 40px rgb(46, 43, 43)"
     };
 
     return (
       <div className="homePages">
         <p className="tag">This is some text for now or maybe for future too</p>
-        {/* <img
-          style={imageStyle}
-          alt="home"
-          src="https://i.ytimg.com/vi/N1icEHtgb3g/maxresdefault.jpg"
-        /> */}
+        <div className="jumboPic">
+          <img
+            style={imageStyle}
+            alt="home"
+            //? This is for jumbotron image. style above
+            src="https://user-images.githubusercontent.com/52087686/68824251-d7c4a200-065b-11ea-8b8e-800c4a41317b.jpg"
+        />
+        </div>
         <Row>
           <Col size="md-6">
             <HomeMap userData={this.userData} />
@@ -42,7 +48,7 @@ class Home extends Component {
             <SearchResultContainer zip={this.state.zip} />
           </Col>
         </Row>
-      </div>
+        </div>
     );
   }
 }

@@ -1,12 +1,18 @@
-
+.coloring{
+  color: aliceblue;
+}
+.c-logout{
+  color: antiquewhite;
+}
  .App {
   text-align: center;
+ 
 }
 .text-secondary{
   color: white;
 }
 .navbar{
-  border-bottom: 2px solid rgb(158, 129, 129);
+  border-bottom: 2px solid black;
   padding: 0;
   height: 35px;
   margin: 0;
@@ -33,25 +39,31 @@
 } */
 .nav-link-logout{
   position: relative;
-  margin-left: 1150px;
-  font-size: 10pt;
+  float: right;
+  left: 300%;
+  margin-top: 4%;
+  /* margin-left: 1150px; */
+  font-size: 17pt;
   
   
 } 
 .backgrounds{
       position: absolute;
       width: 100%;
-      background: yellow;
       background: transparent;
-      backdrop-filter: blur(15px); 
+      /* background-image: url(../src/components/Styles/Images/chicago-2236702.jpg);
+      background-size:  contain; */
+      /* background: transparent; */
+      backdrop-filter: blur(1px); 
     }
 
 .tagName{
-  position: absolute;
+  margin: auto;
+  position: relative;
   text-align: center;
   color: white;
   top: 40px;
-  left: 45%;
+  /* left: 45%; */
 
 }
 .nav-link-logout{
@@ -59,7 +71,7 @@ color: whitesmoke;
 }
 
 @media screen and (max-width: 415px) {
-  .nav-link, .fa-home{
+  .navbar-section{
 color: greenyellow;
 text-align: center;
 }
