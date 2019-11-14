@@ -3,8 +3,12 @@ import SearchForm from "./SearchForm";
 import ResultList from "./ResultList";
 // import NoMatch from "./NoMatch";
 import API from "../../utils/API";
-import "./Style/Result.css"
+import "./Style/Result.css";
 class SearchResultContainer extends Component {
+  constructor() {
+    super();
+  }
+
   state = {
     search: "",
     results: []
@@ -12,8 +16,9 @@ class SearchResultContainer extends Component {
 
   // When this component mounts, search the Giphy API for pictures of kittens
   componentDidMount() {
+    console.log(this.props);
+
     this.searchGiphy("60602");
-   
   }
 
   searchGiphy = query => {
@@ -33,27 +38,22 @@ class SearchResultContainer extends Component {
   // When the form is submitted, search the Giphy API for `this.state.search`
   handleFormSubmit = event => {
     event.preventDefault();
-    if(!this.isNumber(this.state.search)){
-      alert('*** Please enter a valid zip code.');
-    }else{
-    this.searchGiphy(this.state.search);
+    if (!this.isNumber(this.state.search)) {
+      alert("*** Please enter a valid zip code.");
+    } else {
+      this.searchGiphy(this.state.search);
     }
-    this.setState(
-      
-     { search: "",}
-      
-  )
+    this.setState({ search: "" });
   };
 
   isNumber(string) {
     if (isNaN(string) || string < 60202 || string > 60827) {
       return false;
-    }
-    else {
+    } else {
       return true;
     }
   }
-  
+
   render() {
     return (
       <div>
@@ -61,7 +61,7 @@ class SearchResultContainer extends Component {
           search={this.state.search}
           handleFormSubmit={this.handleFormSubmit}
           handleInputChange={this.handleInputChange}
-          validZip={this.validZip}
+          // validZip={this.validZip}
         />
         <ResultList results={this.state.results} />
       </div>
