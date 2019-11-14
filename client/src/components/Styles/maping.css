@@ -9,10 +9,7 @@
   color: white;
 }
 
-
-.mapmargin {
-  margin-top: 25.7%;
+.mapmargin { /** This is for gap margin in between jubo and map*/
+  margin-top: 8%;
   width: 110%;
-
 }
-

@@ -223,6 +223,7 @@ class Map extends Component {
         lng: lngValue
       }
     });
+    this.props.userData(this.state);
   };
 
   render() {
@@ -265,14 +266,17 @@ class Map extends Component {
           {/* For Auto complete Search Box */}
           <Autocomplete
             className="auto"
-            style={{
-              // width: "100%",
-              // height: "40px",
-              // paddingLeft: "16px",
-              // marginTop: "2px",
-              // marginBottom: "70px"
-            }}
+            style={
+              {
+                // width: "100%",
+                // height: "40px",
+                // paddingLeft: "16px",
+                // marginTop: "2px",
+                // marginBottom: "70px"
+              }
+            }
             onPlaceSelected={this.onPlaceSelected}
+            // handleUserInfo={() => this.handleUserInfo("this.state")}
             types={["(regions)"]}
           />
         </GoogleMap>
@@ -282,14 +286,27 @@ class Map extends Component {
 
     if (this.props.center.lat !== undefined) {
       map = (
+        
         <div className="mapmargin">
-          <AsyncMap className="map-framing"
+          <div className="form-group">
+              <label htmlFor=""></label>
+              <input
+                type="text"
+                name="address"
+                className="form-control"
+                onChange={this.onChange}
+                readOnly="readOnly"
+                value={this.state.address}
+              />
+            </div>
+          <AsyncMap
+            className="map-framing"
             googleMapURL="https://maps.googleapis.com/maps/api/js?key=AIzaSyDxTdbiQM9NRtUgYe3cYN86iuXIleDgb04&libraries=places"
             loadingElement={<div style={{
               height: `50%`,
             }} />}
             containerElement={<div style={{ height: this.props.height }} />}
-            mapElement={<div style={{ height: `100%` }} />}
+            mapElement={<div style={{ height: `200%` }} />} //? Go to mapping.css for more sytle
           />
           {/* <button
             className="abutton7"
@@ -342,17 +359,7 @@ class Map extends Component {
                 value={this.state.state}
               />
             </div> */}
-            <div className="form-group">
-              <label htmlFor=""></label>
-              <input
-                type="text"
-                name="address"
-                className="form-control"
-                onChange={this.onChange}
-                readOnly="readOnly"
-                value={this.state.address}
-              />
-            </div>
+            
           </div>
         </div>
       );
