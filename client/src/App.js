@@ -77,7 +77,7 @@ class App extends Component {
         {/* greet user if logged in: */}
         {this.state.loggedIn &&
           <p className="tagName">Welcome to our page, {this.state.firstName}!</p>
-        }
+        }<br></br>
         {/* Routes to different components */}
         <Switch>
         <Route

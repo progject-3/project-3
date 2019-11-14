@@ -35,25 +35,27 @@ class Navbar extends Component {
     console.log(this.props);
 
     return (
+      
       <div className="backgrounds">
         <header className="navbar App-header" id="nav-container">
                     <div className="col-4" >
-                        {loggedIn ? (
+            {loggedIn ? (
+              
                             <section className="navbar-section">
-                                <Link to="#" className="btn btn-link text-secondary" onClick={this.logout}>
-                                    <span className="text-secondary">logout</span></Link>
+                                <Link to="#" className="btn btn-link text-secondary" className="nav-link-logout" onClick={this.logout}>
+                                    <span className="text-secondary" className="c-logout"><i className="fas fa-sign-out-alt">logout</i></span></Link>
 
                             </section>
                         ) : (
                                 <section className="navbar-section">
                                     <Link to="/" className="btn btn-link text-secondary">
-                                        <span className="text-secondary">home</span>
+                                        <span className="text-secondary" className="coloring"><i className="fas fa-home" aria-hidden="true"></i></span>
                                     </Link>
                                     <Link to="/login" className="btn btn-link text-secondary">
-                                        <span className="text-secondary">login</span>
+                                        <span className="text-secondary" className="coloring">login</span>
                                     </Link>
                                     <Link to="/signup" className="btn btn-link">
-                                        <span className="text-secondary">sign up</span>
+                                        <span className="text-secondary" className="coloring">sign up</span>
                                     </Link>
                                 </section>
 

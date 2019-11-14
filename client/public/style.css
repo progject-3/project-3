@@ -1,7 +1,9 @@
 body{
    
-    background:url('./chicago/chicago-01chicago-015638521_7661c21019_o.jpg');
+    background:url(./sea-s.jpg);
     background-size: cover;
+    backdrop-filter: blur(0px);
+    
 }
 
 #result{
