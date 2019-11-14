@@ -16,8 +16,9 @@ function SearchForm(props) {
           recordid="search"
           id="ZIP"
           size="6"
-          maxlength="5"
-        /> <button onClick={props.handleFormSubmit} className="buttonss ">
+          // maxlength={5}
+        />{" "}
+        <button onClick={props.handleFormSubmit} className="buttonss ">
           Search
         </button>
       </div>

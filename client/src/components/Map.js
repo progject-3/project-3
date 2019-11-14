@@ -265,13 +265,15 @@ class Map extends Component {
           {/* For Auto complete Search Box */}
           <Autocomplete
             className="auto"
-            // style={{
-            //   width: "100%",
-            //   height: "40px",
-            //   paddingLeft: "16px",
-            //   marginTop: "2px",
-            //   marginBottom: "70px"
-            // }}
+            style={
+              {
+                // width: "100%",
+                // height: "40px",
+                // paddingLeft: "16px",
+                // marginTop: "2px",
+                // marginBottom: "70px"
+              }
+            }
             onPlaceSelected={this.onPlaceSelected}
             // handleUserInfo={() => this.handleUserInfo("this.state")}
             types={["(regions)"]}
