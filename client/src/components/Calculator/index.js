@@ -23,13 +23,13 @@ function Calculate() {
             value={number1}
             onChange={e => setNumber1(+e.target.value)}
             placeholder="0"
-          />
+          /> <p>Days </p>
           <input
             type="number"
             value={number2}
             onChange={e => setNumber2(+e.target.value)}
             placeholder="0"
-          /> <p>Days <span> Price</span> </p>
+          /> <p> Price </p>
 
         </div>
 

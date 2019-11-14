@@ -12,7 +12,7 @@ class SearchResultContainer extends Component {
 
   // When this component mounts, search the Giphy API for pictures of kittens
   componentDidMount() {
-    this.searchGiphy("60602");
+    this.searchGiphy("60601");
    
   }
 
@@ -63,6 +63,7 @@ class SearchResultContainer extends Component {
           handleInputChange={this.handleInputChange}
           validZip={this.validZip}
         />
+        
         <ResultList results={this.state.results} />
       </div>
     );

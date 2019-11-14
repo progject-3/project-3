@@ -89,7 +89,7 @@ img{
     justify-content: space-around;
     align-content: flex-start;
     overflow: auto;
-    background-color: white;
+    background-color: red;
     border: black 2px solid;
     background: lightcyan;
     border-radius: 19px;

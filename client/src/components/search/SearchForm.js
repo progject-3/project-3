@@ -15,8 +15,8 @@ function SearchForm(props) {
           placeholder="Search By ZipCode"
           recordid="search"
           id="ZIP"
-          size="6"
-          maxlength="5"
+          size="5"
+          // maxlength="5"
         /> <button onClick={props.handleFormSubmit} className="buttonss ">
           Search
         </button>

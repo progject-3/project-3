@@ -43,7 +43,9 @@ class Navbar extends Component {
                             <section className="collapse navbar-collapse">
                                 <Link to="#" className="nav-item active" onClick={this.logout}>
                                     <span className="nav-link-logout"><i className="fas fa-sign-out-alt">logout</i></span></Link>
-
+                                    <Link to="/" className="nav-item active ">
+                                        <span className="nav-link"><i className="fas fa-home" aria-hidden="true"></i></span>
+                                    </Link>
                             </section>
                         ) : (
                                 <section className="collapse navbar-collapse">
