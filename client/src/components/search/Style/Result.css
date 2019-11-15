@@ -3,11 +3,16 @@
 }
 
 input[name="search"] { /**   This is for Search bar   */
-  width: 300px;
+  width: 200px;
+  -webkit-transition: width 1s ease-in-out;
+  transition: width 1s ease-in-out;
   position: relative;
   text-align: center;
   margin: auto;
   height: 33px;
+}
+input[name="search"]:focus {
+  width: 317px;
 }
 .buttonss {   /**   This is for Search button oh Home page   */
  position: relative;

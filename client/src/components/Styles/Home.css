@@ -16,6 +16,15 @@ position: absolute;
     /* margin-top: 20px; */
 }
 
+.footerImage{
+    
+    position: absolute;
+    bottom: 16%;
+    margin-left: 24% ;
+    color: aliceblue;
+    font-size: 40pt;
+}
+
  @media screen and (max-width: 390px) {
   .mapmargin {
       margin: auto;
@@ -38,7 +47,4 @@ position: absolute;
       margin-top: 3px;
       left: 59px;
   }
-/* li {
-    border: 3px solid black;
-} */
 } 
