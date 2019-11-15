@@ -304,7 +304,7 @@ class Map extends Component {
               height: `50%`,
             }} />}
             containerElement={<div style={{ height: this.props.height }} />}
-            mapElement={<div style={{ height: `200%` }} />} //? Go to mapping.css for more sytle
+            mapElement={<div style={{ height: `100%` }} />} //? Go to mapping.css for more sytle
           />
           {/* <button
             className="abutton7"
