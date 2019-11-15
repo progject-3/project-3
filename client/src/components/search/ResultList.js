@@ -24,7 +24,8 @@ class ResultList extends Component {
       bathrooms: '',
       host_verifications: '',
       property_type: '',
-      notes: ''
+      notes: '',
+      host_name: ''
 
     };
   }
@@ -36,7 +37,7 @@ class ResultList extends Component {
       search: this.props.searchStuff
     });
   }
-  renderPage = (id, location, url, street , price,host_thumbnail_url, latitude,longitude,house_rules,description,bedrooms, bathrooms, host_verifications,property_type, notes) => {
+  renderPage = (id, location, url, street , price,host_thumbnail_url, latitude,longitude,house_rules,description,bedrooms, bathrooms, host_verifications,property_type, notes, host_name) => {
     // console.log("clicked on image")
     // console.log("url: " +url);
     // console.log(id); specificPage
@@ -56,7 +57,8 @@ class ResultList extends Component {
       bathrooms: bathrooms,
       host_verifications: host_verifications,
       property_type: property_type,
-      notes: notes
+      notes: notes,
+      host_name: host_name
 
       
     });
@@ -65,7 +67,7 @@ class ResultList extends Component {
   render() {
     if (this.state.redirectTo) {
       return (
-        <Redirect to={{ pathname: this.state.redirectTo, state: [this.state.id, this.state.location, this.state.imageURL, this.state.street, this.state.price ,this.state.host_thumbnail_url, this.state.latitude, this.state.longitude,this.state.house_rules, this.state.description, this.state.bedrooms, this.state.bathrooms, this.state.host_verifications,this.state.property_type, this.state.notes] }} />
+        <Redirect to={{ pathname: this.state.redirectTo, state: [this.state.id, this.state.location, this.state.imageURL, this.state.street, this.state.price ,this.state.host_thumbnail_url, this.state.latitude, this.state.longitude,this.state.house_rules, this.state.description, this.state.bedrooms, this.state.bathrooms, this.state.host_verifications,this.state.property_type, this.state.notes, this.state.host_name] }} />
       )
 
     } else {
@@ -77,7 +79,7 @@ class ResultList extends Component {
                 {this.props.results.map(result => (
                   <li className="list  box" key={result.recordid}>
                     <div className="img-container">
-                      <img alt={result.fields} className="box-img-top box-height" src={result.fields.picture_url} onClick={() => { this.renderPage(result.recordid, result.fields.host_location, result.fields.picture_url, result.fields.street, result.fields.price,result.fields.host_thumbnail_url, result.fields.latitude,result.fields.longitude, result.fields.house_rules, result.fields.description, result.fields.bedrooms, result.fields.bathrooms, result.fields.host_verifications, result.fields.property_type, result.fields.notes) }} />
+                      <img alt={result.fields} className="box-img-top box-height" src={result.fields.picture_url} onClick={() => { this.renderPage(result.recordid, result.fields.host_location, result.fields.picture_url, result.fields.street, result.fields.price,result.fields.host_thumbnail_url, result.fields.latitude,result.fields.longitude, result.fields.house_rules, result.fields.description, result.fields.bedrooms, result.fields.bathrooms, result.fields.host_verifications, result.fields.property_type, result.fields.notes, result.fields.host_name) }} />
                     </div>
                     <p>
                       {" "}
