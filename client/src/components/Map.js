@@ -296,16 +296,18 @@ class Map extends Component {
                 readOnly="readOnly"
                 value={this.state.address}
               />
-            </div>
+          </div>
+          <div className="map-framing">
           <AsyncMap
-            className="map-framing"
+            
             googleMapURL="https://maps.googleapis.com/maps/api/js?key=AIzaSyDxTdbiQM9NRtUgYe3cYN86iuXIleDgb04&libraries=places"
             loadingElement={<div style={{
               height: `50%`,
             }} />}
             containerElement={<div style={{ height: this.props.height }} />}
             mapElement={<div style={{ height: `100%` }} />} //? Go to mapping.css for more sytle
-          />
+            />
+            </div>
           {/* <button
             className="abutton7"
             google={this.props.google}
@@ -358,7 +360,7 @@ class Map extends Component {
               />
             </div> */}
             <div className="form-group">
-              <label htmlFor="">Address</label>
+              <label htmlFor=""></label>
               <input
                 type="text"
                 name="address"
