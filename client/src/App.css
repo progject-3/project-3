@@ -1,5 +1,6 @@
 .coloring{
   color: aliceblue;
+  
 }
 .c-logout{
   color: antiquewhite;
@@ -14,11 +15,12 @@
 .navbar{
   border-bottom: 2px solid black;
   padding: 0;
-  height: 35px;
+  height: 32px;
   margin: 0;
+  background: transparent;
   
 }
- .navbar-section{
+ .navbar-section{ /**Nav "Texts"*/
  font-size: 12pt;
   padding: 0;
   margin-left: 5px;
@@ -26,7 +28,7 @@
   font-family: Comic Sans MS Header;
   height: 35px; 
   position: relative;
-  bottom: 18px;
+  bottom: 7px;
  }
 /* .nav-link, .fa-home{ */
   /* display: block; */
