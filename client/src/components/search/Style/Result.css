@@ -2,7 +2,8 @@
   width: 100%;
 }
 
-input[name="search"] { /**   This is for Search bar   */
+input[name="search"] {
+  /**   This is for Search bar   */
   width: 200px;
   -webkit-transition: width 1s ease-in-out;
   transition: width 1s ease-in-out;
@@ -14,23 +15,25 @@ input[name="search"] { /**   This is for Search bar   */
 input[name="search"]:focus {
   width: 317px;
 }
-.buttonss {   /**   This is for Search button oh Home page   */
- position: relative;
- margin: 5px;
- left: 44%;
- margin-bottom: 0px; 
- border-radius: 19px;
- border: black 0.5px solid;
- background: bisque;
- backdrop-filter: blur(13px);
- outline: none;
- box-shadow: 0px 0px 15px black;
+.buttonss {
+  /**   This is for Search button oh Home page   */
+  position: relative;
+  margin: 5px;
+  left: 44%;
+  margin-bottom: 0px;
+  border-radius: 19px;
+  border: black 0.5px solid;
+  background: bisque;
+  backdrop-filter: blur(13px);
+  outline: none;
+  box-shadow: 0px 0px 15px black;
 }
 
 /* .homePage{
   margin-top: 70px !important;
 } */
-.box {    /**   This is for ?  */
+.box {
+  /**   This is for ?  */
   border: 3px solid #d7d7d7;
   cursor: pointer;
   height: 250px;
@@ -110,5 +113,3 @@ input[name="search"]:focus {
   border: 0 solid rgba(0, 0, 0, 0.125);
   border-radius: 10px;
 }
-
-
