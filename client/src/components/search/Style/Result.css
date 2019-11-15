@@ -4,29 +4,44 @@
 
 input[name="search"] {
   /**   This is for Search bar   */
-  width: 200px;
-  -webkit-transition: width 1s ease-in-out;
-  transition: width 1s ease-in-out;
+
+  border-color: rgba(229, 103, 23, 0.8);
+  box-shadow: 0 1px 1px rgba(229, 103, 23, 0.075) inset,
+    0 0 8px rgba(229, 103, 23, 0.6);
+  outline: 0 none;
+
+  width: 220px;
+  /* -webkit-transition: width 1s ease-in-out;
+  transition: width 1s ease-in-out; */
+  -webkit-transition: height 1s ease-in-out;
+  transition: height 1s ease-in-out;
   position: relative;
   text-align: center;
   margin: auto;
-  height: 33px;
+  height: 20px;
+  border-color: red 1px solid;
+  font-size: 13pt;
 }
 input[name="search"]:focus {
-  width: 317px;
+  /* width: 300px; */
+  height: 40px;
 }
 .buttonss {
   /**   This is for Search button oh Home page   */
+  border-color: rgba(229, 103, 23, 0.8);
+  box-shadow: 0 1px 1px rgba(229, 103, 23, 0.075) inset,
+    0 0 8px rgba(229, 103, 23, 0.6);
+  outline: 0 none;
   position: relative;
   margin: 5px;
   left: 44%;
   margin-bottom: 0px;
   border-radius: 19px;
-  border: black 0.5px solid;
+  /* border: black 0.5px solid; */
   background: bisque;
   backdrop-filter: blur(13px);
   outline: none;
-  box-shadow: 0px 0px 15px black;
+  /* box-shadow: 0px 0px 15px black; */
 }
 
 /* .homePage{
@@ -59,7 +74,19 @@ input[name="search"]:focus {
   width: 100% !important;
 }
 
+.overflowTest {
+  /**This is for Home page Apt's border*/
+  padding: 15px;
+  width: 100%;
+  height: 650px;
+  overflow: scroll;
+  border: 0.4px solid whitesmoke;
+  border-radius: 15px;
+  backdrop-filter: blur(1px);
+  /* border: 1px solid #ccc; */
+}
 .mywrapper {
+  /** Inside Home page Apt frames*/
   padding-top: 50px;
   height: 620px !important;
   display: flex;
@@ -71,18 +98,6 @@ input[name="search"]:focus {
   background: transparent;
 
   border: white;
-}
-
-.overflowTest {
-  padding: 15px;
-  width: 100%;
-  height: 650px;
-  overflow: scroll;
-  border: 0.4px solid white;
-  border-radius: 15px;
-  backdrop-filter: blur(1px);
-
-  /* border: 1px solid #ccc; */
 }
 
 .center {
@@ -112,4 +127,32 @@ input[name="search"]:focus {
   color: black;
   border: 0 solid rgba(0, 0, 0, 0.125);
   border-radius: 10px;
+}
+
+/*? Media Query begins here*/
+
+@media screen and (max-width: 390px) {
+  .mywrapper {
+    height: 320px !important;
+    width: 720px !important;
+  }
+  .overflowTest {
+    height: 340px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .mywrapper {
+    /* position: absolute; */
+    height: 520px !important;
+    width: 720px !important;
+    margin-right: 100px !important;
+  }
+  .overflowTest {
+    position: absolute;
+    /* margin-right: 1px !important; */
+    height: 540px;
+    right: 5px;
+    width: 800px;
+    margin-left: 20px;
+  }
 }
