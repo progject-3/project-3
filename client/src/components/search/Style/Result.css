@@ -3,23 +3,41 @@
 }
 
 input[name="search"] { /**   This is for Search bar   */
-  width: 300px;
+ 
+  border-color: rgba(229, 103, 23, 0.8);
+    box-shadow: 0 1px 1px rgba(229, 103, 23, 0.075) inset, 0 0 8px rgba(229, 103, 23, 0.6);
+    outline: 0 none;
+  
+  width: 220px;
+  /* -webkit-transition: width 1s ease-in-out;
+  transition: width 1s ease-in-out; */
+  -webkit-transition: height 1s ease-in-out;
+  transition: height 1s ease-in-out;
   position: relative;
   text-align: center;
   margin: auto;
-  height: 33px;
+  height: 20px;
+  border-color: red 1px solid;
+  font-size: 13pt;
+}
+input[name="search"]:focus {
+  /* width: 300px; */
+  height: 40px;
 }
 .buttonss {   /**   This is for Search button oh Home page   */
+  border-color: rgba(229, 103, 23, 0.8);
+    box-shadow: 0 1px 1px rgba(229, 103, 23, 0.075) inset, 0 0 8px rgba(229, 103, 23, 0.6);
+    outline: 0 none;
  position: relative;
  margin: 5px;
  left: 44%;
  margin-bottom: 0px; 
  border-radius: 19px;
- border: black 0.5px solid;
+ /* border: black 0.5px solid; */
  background: bisque;
  backdrop-filter: blur(13px);
  outline: none;
- box-shadow: 0px 0px 15px black;
+ /* box-shadow: 0px 0px 15px black; */
 }
 
 /* .homePage{
@@ -51,7 +69,18 @@ input[name="search"] { /**   This is for Search bar   */
   width: 100% !important;
 }
 
-.mywrapper {
+
+.overflowTest { /**This is for Home page Apt's border*/
+  padding: 15px;
+  width: 100%;
+  height: 650px;
+  overflow: scroll;
+  border: 0.4px solid whitesmoke;
+  border-radius: 15px;
+  backdrop-filter: blur(1px);
+  /* border: 1px solid #ccc; */
+}
+.mywrapper { /** Inside Home page Apt frames*/
   padding-top: 50px;
   height: 620px !important;
   display: flex;
@@ -63,18 +92,6 @@ input[name="search"] { /**   This is for Search bar   */
   background: transparent;
 
   border: white;
-}
-
-.overflowTest {
-  padding: 15px;
-  width: 100%;
-  height: 650px;
-  overflow: scroll;
-  border: 0.4px solid white;
-  border-radius: 15px;
-  backdrop-filter: blur(1px);
-
-  /* border: 1px solid #ccc; */
 }
 
 .center {
@@ -96,7 +113,6 @@ input[name="search"] { /**   This is for Search bar   */
 .list {
   position: relative;
   display: block;
-  /* padding: .75rem 1.25rem; */
   margin-bottom: -1px;
   /* background-image: url('https://cdn.pixabay.com/photo/2017/11/04/21/09/textile-2918844_960_720.jpg'); */
   background-image: url("./paper-1990111.jpg");
@@ -106,4 +122,17 @@ input[name="search"] { /**   This is for Search bar   */
   border-radius: 10px;
 }
 
+
+/*? Media Query begins here*/
+
+@media screen and (max-width: 390px) {
+ .mywrapper {
+ 
+  height: 320px !important;
+ width: 720px !important;
+  }
+  .overflowTest{
+    height: 340px;
+  }
+}
 

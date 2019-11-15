@@ -16,12 +16,15 @@ class Home extends Component {
   render() {
     return (
       <div className="homePage">
-        <div style={{ margin: "30px" }}>
+        <div style={{
+          marginRight: "45px",
+          marginLeft: "20px"
+        }}>
           {" "}
           <Map
             google={this.props.google}
             center={{ lat: 41.8960926, lng: -87.6210186}}
-            height="300px"
+            height="506.5px"
             zoom={15}
             userData={this.props.userData}
           />{" "}
