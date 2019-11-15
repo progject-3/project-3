@@ -27,7 +27,11 @@ class Home extends Component {
       borderRadius: '8px',
       boxShadow: "0px 0px 40px rgb(46, 43, 43)"
     };
-
+    const footerStyle = {
+      // height: "305px",
+      width: "98%",
+   
+ }
     return (
       <div className="homePages">
         <p className="tag">This is some text for now or maybe for future too</p>
@@ -48,7 +52,16 @@ class Home extends Component {
             <SearchResultContainer zip={this.state.zip} />
           </Col>
         </Row>
+        <div>
+          <img
+            style={footerStyle}
+          src={require('./Styles/Images/Footer-City.png')}
+          />
+          <div className="footerImage">
+            We have something comming
+            </div>
         </div>
+      </div>
     );
   }
 }
