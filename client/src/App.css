@@ -1,85 +1,86 @@
-.coloring{
-  color: aliceblue;
-  
+body {
+  background: url(./sea-s.jpg) !important;
+  background-size: cover;
+  backdrop-filter: blur(0px);
+  background-color: red;
 }
-.c-logout{
+
+.coloring {
+  color: aliceblue;
+}
+.c-logout {
   color: antiquewhite;
 }
- .App {
+.App {
   text-align: center;
- 
 }
-.text-secondary{
+.text-secondary {
   color: white;
 }
-.navbar{
+.navbar {
   border-bottom: 2px solid black;
   padding: 0;
   height: 32px;
   margin: 0;
   background: transparent;
-  
 }
- .navbar-section{ /**Nav "Texts"*/
- font-size: 12pt;
+.navbar-section {
+  /**Nav "Texts"*/
+  font-size: 12pt;
   padding: 0;
   margin-left: 5px;
   color: white;
   font-family: Comic Sans MS Header;
-  height: 35px; 
+  height: 35px;
   position: relative;
   bottom: 7px;
- }
+}
 /* .nav-link, .fa-home{ */
-  /* display: block; */
-  /* font-size: 12pt;
+/* display: block; */
+/* font-size: 12pt;
   padding: 0;
   margin-left: 5px;
   color: white;
   font-family: Comic Sans MS Header;
   height: 35px; 
 } */
-.nav-link-logout{
+.nav-link-logout {
   position: relative;
   float: right;
   left: 300%;
   margin-top: 4%;
   /* margin-left: 1150px; */
   font-size: 17pt;
-  
-  
-} 
-.backgrounds{
-      position: absolute;
-      width: 100%;
-      background: transparent;
-      /* background-image: url(../src/components/Styles/Images/chicago-2236702.jpg);
+}
+.backgrounds {
+  position: absolute;
+  width: 100%;
+  background: transparent;
+  /* background-image: url(../src/components/Styles/Images/chicago-2236702.jpg);
       background-size:  contain; */
-      /* background: transparent; */
-      backdrop-filter: blur(1px); 
-    }
+  /* background: transparent; */
+  backdrop-filter: blur(1px);
+}
 
-.tagName{
+.tagName {
   margin: auto;
   position: relative;
   text-align: center;
   color: white;
   top: 40px;
   /* left: 45%; */
-
 }
-.nav-link-logout{
-color: whitesmoke;
+.nav-link-logout {
+  color: whitesmoke;
 }
 
 @media screen and (max-width: 415px) {
-  .navbar-section{
-color: greenyellow;
-text-align: center;
-margin-top: 8px;
-position: absolute;
-
-}
+  .navbar-section {
+    color: greenyellow;
+    text-align: center;
+    margin-top: 8px;
+    position: absolute;
+  }
 }
 /* @media screen and (max-width: 500px) {
   .navbar {
@@ -126,5 +127,3 @@ position: absolute;
 /* .form-horizontal{
 
 } */
-
-
