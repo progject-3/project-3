@@ -1,10 +1,10 @@
 .framing-calc{
     border: 1px solid black;
-    height: 250px;
+    height: 350px;
     padding: 10px;
-position: absolute;
+position: fixed;
     text-align: center;
-    left: 650px;
+    left: 5%;
     /* border: 0.5px solid white; */
     /* width: 250px; */
     /* float: right; */
