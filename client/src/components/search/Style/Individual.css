@@ -1,3 +1,18 @@
+.buttne{/*? + and - button in spPage Calc. line 88-90 individualPage.js*/
+border-radius: 100%;
+background: wheat;
+width: 29px;
+}
+.buttne-1{
+  border-radius: 100%;
+background: #f5deb3;
+width: 29px;
+}
+/*?End of button style for calc*/
+
+.title-of{/*? Title line 72 in indPage.js*/
+color: lightgoldenrodyellow;
+}
 img {
   width: auto;
   height: auto;
@@ -122,13 +137,35 @@ for="message"*/
   display: none;
 }
 
+.framing-calc{
+  border: 1px solid black;
+  height: 150px;
+  padding: 10px;
+position: fixed;
+  text-align: center;
+  left: 5%;
+  /* border: 0.5px solid white; */
+  /* width: 250px; */
+  /* float: right; */
+  /* margin-bottom:  40px;
+  margin-right: 10px; */
+  /* padding: 3px; */
+  border-radius: 15px;
+  background: transparent;
+  box-shadow: 0px 0px 60px rgb(46, 43, 43);
+  backdrop-filter: blur(2px);
+  color: white;
+}
 
 /* ? style for "specificPage" after the image content */
 .after-image {
   color: white;
 }
 
-
+.host{
+  height: auto;
+  border: 1px solid black;
+}
   /* ? style for "specificPage" after the image content */
   .after-image{ 
 color: white;
@@ -137,14 +174,16 @@ color: white;
     width: 100%;
     height: auto;
   }
-  .scrols {
+  .scrols { /*? This is spPage right column main body and border. line 130 indPage.js*/
+    margin-top: 18px;
     padding: 15px;
     width: 100%;
-    height: 1000px;
+    height: 950px;
     overflow: scroll;
-    border: 0.4px solid white;
+    border: 0.8px solid white;
     border-radius: 15px;
     backdrop-filter: blur(1px);
+  
   
     /* border: 1px solid #ccc; */
   }

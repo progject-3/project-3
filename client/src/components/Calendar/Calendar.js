@@ -36,7 +36,9 @@ export default class Example extends React.Component {
     const modifiers = { start: from, end: to };
     return (
       <div className="RangeExample">
-        <p>
+        <p style={{
+          color: "white"
+        }}> 
           {!from && !to && 'Please select your first day of stay.'}
           {from && !to && 'Please select the last day of your stay.'}
           {from &&
@@ -49,13 +51,14 @@ export default class Example extends React.Component {
             </button>
           )}
         </p>
-        <DayPicker
+        
+        <DayPicker 
           className="Selectable"
           numberOfMonths={this.props.numberOfMonths}
           selectedDays={[from, { from, to }]}
           modifiers={modifiers}
           onDayClick={this.handleDayClick}
-        />
+          />
         <Helmet>
           <style>{`
   .Selectable .DayPicker-Day--selected:not(.DayPicker-Day--start):not(.DayPicker-Day--end):not(.DayPicker-Day--outside) {
@@ -72,6 +75,18 @@ export default class Example extends React.Component {
   .Selectable .DayPicker-Day--end {
     border-top-right-radius: 50% !important;
     border-bottom-right-radius: 50% !important;
+  }
+  .DayPicker-Day[role=gridcell] {
+border-radius: 50% !important;
+  }
+  .DayPicker-Caption{
+    color: white;
+  }
+  .DayPicker-Weekday{
+    color: lightgoldenrodyellow;
+  }
+  hr{
+    color: lightgoldenrodyellow !important;
   }
 `}</style>
         </Helmet>

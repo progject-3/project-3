@@ -75,7 +75,7 @@ input[name="search"]:focus {
 .overflowTest { /**This is for Home page Apt's border*/
   padding: 15px;
   width: 100%;
-  height: 650px;
+  height: 600px;
   overflow: scroll;
   border: 0.4px solid whitesmoke;
   border-radius: 15px;
