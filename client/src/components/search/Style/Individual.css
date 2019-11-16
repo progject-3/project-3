@@ -114,7 +114,8 @@ position: fixed;
 }
 
 .host{
-  height: 500px;
+  height: auto;
+  border: 1px solid black;
 }
   /* ? style for "specificPage" after the image content */
   .after-image{ 
