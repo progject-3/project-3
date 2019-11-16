@@ -42,26 +42,28 @@ class IndividualPage extends Component {
               action="https://formspree.io/zaid.fadel89@yahoo.com"
               method="POST"
             >
-              <label for="name">name</label>
-              <input type="text" className="name" name="name" />
-              <label for="phone">phone</label>
-              <input id="phonenum" type="tel" pattern="^\d{3}\d{3}\d{4}$" />
+              <label for="name"> </label>
+              <input type="text" placeholder="Name" className="name" name="name" /><br></br>
+              <label for="phone"> </label>
+              <input id="phonenum" placeholder="Phone" type="tel" pattern="^\d{3}\d{3}\d{4}$" /><br></br>
               <label for="message">
-                Message
+                
             <textarea
-                  className="message"
+                    className="message"
+                    placeholder="Message..."
                   name="message"
-                  style={{ height: "100px" }}
+                  style={{ height: "100px", fontStyle: "italic"}}
                 >
                 </textarea>
-              </label>
+                </label><br>
+                </br>
               {/* <div className="status"></div> */}
               <button
                 type="subnits"
-                className="subnits waves-effect waves-light btn"
+                className="btn-btbt"
               >
-                send{" "}
-              </button>
+                Send{" "}
+                <i class="far fa-paper-plane"></i></button>
             </form>
             
             </Modal>

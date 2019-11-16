@@ -73,16 +73,50 @@ img:hover {
   /* background-color: rgba(52,73,94,0.75); */
 }
 
-/* Media Queries */
-@media screen and (max-width: 960px) {
-  .parent {
-    width: 100%;
-    margin: 20px 0px;
-  }
-  .all {
-    padding: 20px 20px;
-  }
+/**! This line below is for Modal style only*/
+/*? for modal frame go to index.js inside the Modal folder*/
+
+/*? Modal inputs*/
+input[type=text]{
+border-radius:  15px;
+font-size:12pt;
+margin: 3px;
+outline: none;
+border: 0.5px solid black;
+
 }
+input[type=tel]{
+  border-radius:  15px;
+  font-size:12pt;
+  outline: none;
+  margin: 3px;
+  border: 0.5px solid black;
+}
+textarea[name=message]{
+  border: 0.5px solid black;
+  border-radius:  15px;
+  margin-top: 3px;
+  font-size: small;
+  width: 200px;
+  outline: none;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+button[type=subnits]{
+  border: 0.6px solid black;
+  border-radius: 4px;
+  float: right;
+  margin: 0;
+  font-size: small;
+  background: lightgoldenrodyellow;
+}
+/*t type="text"
+l for="phone"
+ id="phonenum
+for="message"*/
+/*! modal ends here*/
+
+
+
 
 .hello {
   display: none;
@@ -128,4 +162,15 @@ color: white;
     backdrop-filter: blur(1px);
   
     /* border: 1px solid #ccc; */
+  }
+
+/*! Media Queries */
+  @media screen and (max-width: 960px) {
+    .parent {
+      width: 100%;
+      margin: 20px 0px;
+    }
+    .all {
+      padding: 20px 20px;
+    }
   }

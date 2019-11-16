@@ -37,8 +37,8 @@ export default class Example extends React.Component {
     return (
       <div className="RangeExample">
         <p>
-          {!from && !to && 'Please select the first day.'}
-          {from && !to && 'Please select the last day.'}
+          {!from && !to && 'Please select your first day of stay.'}
+          {from && !to && 'Please select the last day of your stay.'}
           {from &&
             to &&
             `Selected from ${from.toLocaleDateString()} to

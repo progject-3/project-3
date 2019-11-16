@@ -1,26 +1,33 @@
 import React, { Component } from 'react';
 
 let modelStyle = {
-  width: '500px',
+  
+  width: '270px',
   maxWidth: '100%',
   margin: '0 auto',
   position: 'fixed',
-  left: '20%',
+  left: '39%',
   top: '60%',
   transform: 'translate(-50%,-50%)',
   zIndex: '999',
-  backgroundColor: '#eee',
-  padding: '10px 20px 40px',
+  // backdropFilter: "blur(10px)",
+  // background: 'transparent',
+  background: 'yellow',
+  opacity: '10px',
+  border: "1px solid white",
+  padding: '10px 20px 30px',
   borderRadius:'8px',
   display: 'flex',
   flexDirection: 'column'
 };
 let closeButton = {
   marginBottom: '15px',
+  background: 'red',
+  color: "white",
   padding: '3px 8px',
   cursor: 'pointer',
   borderRadius: '50%',
-  border: 'none',
+  border: '0.1px solid black',
   width: '30px',
   height: '30px',
   fontWeight: 'bold',
