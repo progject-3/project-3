@@ -122,21 +122,6 @@ for="message"*/
   display: none;
 }
 
-/* .mywrapper {
-  padding-top: 50px;
-  height: 460px;
-  width: 600px;
-  display: flex;
-  flex-flow: row wrap;
-  padding: 0;
-  justify-content: space-around;
-  align-content: flex-start;
-  overflow: auto; */
-  /* background-color: white; */
-  /* border: black 2px solid;
-    background: lightcyan; */
-  /* border-radius: 19px;
-} */
 
 /* ? style for "specificPage" after the image content */
 .after-image {
