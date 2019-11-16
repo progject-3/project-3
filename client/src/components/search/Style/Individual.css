@@ -88,28 +88,35 @@ img:hover {
   display: none;
 }
 
-/* .mywrapper {
-  padding-top: 50px;
-  height: 460px;
-  width: 600px;
-  display: flex;
-  flex-flow: row wrap;
-  padding: 0;
-  justify-content: space-around;
-  align-content: flex-start;
-  overflow: auto; */
-  /* background-color: white; */
-  /* border: black 2px solid;
-    background: lightcyan; */
-  /* border-radius: 19px;
-} */
+.framing-calc{
+  border: 1px solid black;
+  height: 150px;
+  padding: 10px;
+position: fixed;
+  text-align: center;
+  left: 5%;
+  /* border: 0.5px solid white; */
+  /* width: 250px; */
+  /* float: right; */
+  /* margin-bottom:  40px;
+  margin-right: 10px; */
+  /* padding: 3px; */
+  border-radius: 15px;
+  background: transparent;
+  box-shadow: 0px 0px 60px rgb(46, 43, 43);
+  backdrop-filter: blur(2px);
+  color: white;
+}
 
 /* ? style for "specificPage" after the image content */
 .after-image {
   color: white;
 }
 
-
+.host{
+  height: auto;
+  border: 1px solid black;
+}
   /* ? style for "specificPage" after the image content */
   .after-image{ 
 color: white;
