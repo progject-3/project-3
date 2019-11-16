@@ -2,9 +2,9 @@
     border: 1px solid black;
     height: 350px;
     padding: 10px;
-position: fixed;
+    position: fixed;
     text-align: center;
-    left: 5%;
+    left: 7%;
     /* border: 0.5px solid white; */
     /* width: 250px; */
     /* float: right; */
@@ -16,4 +16,9 @@ position: fixed;
     box-shadow: 0px 0px 60px rgb(46, 43, 43);
     backdrop-filter: blur(2px);
     color: white;
+}
+.inputne{
+    width: 110px;
+    border-radius: 9px;
+    margin: 5px;
 }

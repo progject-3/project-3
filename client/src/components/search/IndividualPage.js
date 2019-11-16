@@ -50,12 +50,13 @@ this.setState({
 handleChange = (event) => {
 this.setState({quantity: event.target.value});
 }
+
   componentDidMount() {
     this.setState({
       search: this.props.searchStuff
     });
   }
-
+  
   render() {
     return (
       <div>
@@ -68,7 +69,7 @@ this.setState({quantity: event.target.value});
                 </div>
               </div>
               <div className="" style={{ height: "850px"}}>
-              <div>
+              <div className="title-of">
               <h3> {this.props.location.state[20]}</h3>
 <hr></hr>
               <button style={{
@@ -85,9 +86,9 @@ this.setState({quantity: event.target.value});
            
            <p> <i className="fas fa-bed"></i> {this.props.location.state[10]} | <i className="fas fa-shower"></i> {this.props.location.state[11]}  | <i class="fas fa-dollar-sign"></i> {this.props.location.state[4]}</p>
 <br></br>
-          price:<button onClick={this.IncrementItem}>+</button>
+          Total: <button className="buttne-1" onClick={this.IncrementItem}> +</button>
     <input className="inputne" value={this.state.quantity * this.props.location.state[4]} onChange={this.handleChange}/><br></br>
-    days: <button onClick = {this.DecreaseItem}>-</button>
+    Days:  <button className="buttne" onClick = {this.DecreaseItem}> -</button>
     <input className="inputne" value={this.state.quantity } onChange={this.handleChange}/>
      </div>
      </div>
@@ -95,26 +96,28 @@ this.setState({quantity: event.target.value});
               action="https://formspree.io/zaid.fadel89@yahoo.com"
               method="POST"
             >
-              <label for="name">name</label>
-              <input type="text" className="name" name="name" />
-              <label for="phone">phone</label>
-              <input id="phonenum" type="tel" pattern="^\d{3}\d{3}\d{4}$" />
+              <label for="name"> </label>
+              <input type="text" placeholder="Name" className="name" name="name" /><br></br>
+              <label for="phone"> </label>
+              <input id="phonenum" placeholder="Phone" type="tel" pattern="^\d{3}\d{3}\d{4}$" /><br></br>
               <label for="message">
-                Message
+                
             <textarea
-                  className="message"
+                    className="message"
+                    placeholder="Message..."
                   name="message"
-                  style={{ height: "100px" }}
+                  style={{ height: "100px", fontStyle: "italic"}}
                 >
                 </textarea>
-              </label>
+                </label><br>
+                </br>
               {/* <div className="status"></div> */}
               <button
                 type="subnits"
-                className="subnits waves-effect waves-light btn"
+                className="btn-btbt"
               >
-                send{" "}
-              </button>
+                Send{" "}
+                <i class="far fa-paper-plane"></i></button>
             </form>
             
             </Modal>
@@ -167,7 +170,18 @@ this.setState({quantity: event.target.value});
        
         </Row>
       
-      
+        <div>
+          <img
+            style={{
+              width: "98%",
+            }}
+          src={require('./Style/Footer-City.png')}
+          />
+          <div className="footerImage">
+            We have nothing comming!
+            
+            </div>
+        </div>
       </div>
      
     )
