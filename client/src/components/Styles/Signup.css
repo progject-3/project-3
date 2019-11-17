@@ -46,7 +46,7 @@ height: 100vh;
       text-align: right;
     display: inline-block;
     width: 106px;
-    font-size: 0.7em;
+    font-size: 20px;
     position: relative;
     top: 10px;
 
@@ -63,7 +63,7 @@ height: 100vh;
       width: 200px;
       float: right;
       bottom: 30px;
-      font-size: 0.8em;
+      font-size: 20px;
       border-radius: 13px;
       /* border-bottom-right-radius: 13px; */
       opacity: 80%;

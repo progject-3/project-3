@@ -154,7 +154,7 @@ class Map extends Component {
    *
    * @param event
    */
-  onInfoWindowClose = event => {};
+  onInfoWindowClose = event => { };
 
   /**
    * When the marker is dragged you get the lat and long using the functions available from event object.
@@ -284,92 +284,33 @@ class Map extends Component {
 
     if (this.props.center.lat !== undefined) {
       map = (
-        
+
         <div className="mapmargin">
           <div className="form-group">
-              <label htmlFor=""></label>
-              <input
-                type="text"
-                name="address"
-                className="form-control"
-                onChange={this.onChange}
-                readOnly="readOnly"
-                value={this.state.address}
-              />
+            <label htmlFor=""></label>
+            <input
+              type="text"
+              name="address"
+              className="form-control"
+              onChange={this.onChange}
+              readOnly="readOnly"
+              value={this.state.address}
+            />
           </div>
           <div className="map-framing">
-          <AsyncMap
-            
-            googleMapURL="https://maps.googleapis.com/maps/api/js?key=AIzaSyDxTdbiQM9NRtUgYe3cYN86iuXIleDgb04&libraries=places"
-            loadingElement={<div style={{
-              height: `50%`,
-            }} />}
-            containerElement={<div style={{ height: this.props.height }} />}
-            mapElement={<div style={{ height: `100%` }} />} //? Go to mapping.css for more sytle
+            <AsyncMap
+
+              googleMapURL="https://maps.googleapis.com/maps/api/js?key=AIzaSyDxTdbiQM9NRtUgYe3cYN86iuXIleDgb04&libraries=places"
+              loadingElement={<div style={{
+                height: `50%`,
+              }} />}
+              containerElement={<div style={{ height: this.props.height }} />}
+              mapElement={<div style={{ height: `100%` }} />} //? Go to mapping.css for more sytle
             />
-            </div>
-          {/* <button
-            className="abutton7"
-            google={this.props.google}
-            center={{ lat: 41.9245071073, lng: -87.6938524022 }}
-          >
-            search
-          </button> */}
-          {/* <br></br>
-          <br></br>
-          <br></br>
-          <br></br>
-          <br></br>
-          <br></br> <br></br>
-          <br></br>
-          <br></br> <br></br>
-          <br></br>
-          <br></br> */}
+          </div>
+
           <div>
-            {/* <div className="form-group">
-              <label htmlFor="">City</label>
-              <input
-                type="text"
-                name="city"
-                className="form-control"
-                onChange={this.onChange}
-                readOnly="readOnly"
-                value={this.state.city}
-              />
-            </div>
-            <div className="form-group">
-              <label htmlFor="">Area</label>
-              <input
-                type="text"
-                name="area"
-                className="form-control"
-                onChange={this.onChange}
-                readOnly="readOnly"
-                value={this.state.area}
-              />
-            </div>
-            <div className="form-group">
-              <label htmlFor="">State</label>
-              <input
-                type="text"
-                name="state"
-                className="form-control"
-                onChange={this.onChange}
-                readOnly="readOnly"
-                value={this.state.state}
-              />
-            </div> */}
-            {/* <div className="form-group">
-              <label htmlFor=""></label>
-              <input
-                type="text"
-                name="address"
-                className="form-control"
-                onChange={this.onChange}
-                readOnly="readOnly"
-                value={this.state.address}
-              />
-            </div> */}
+
           </div>
         </div>
       );
