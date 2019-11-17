@@ -45,14 +45,26 @@ body {
   font-family: Comic Sans MS Header;
   height: 35px; 
 } */
-.nav-link-logout {
+section[name=lg]{ /*! Navbar after log in. line 43-49 navbar.js*/
+  position: relative;
+bottom: 29px !important;
+} 
+.nav-link-logout{ 
   position: relative;
   float: right;
-  left: 300%;
-  margin-top: 4%;
+  left: 1100%;
+  bottom: 18px;
+ 
   /* margin-left: 1150px; */
   font-size: 17pt;
 }
+ .nav-link {
+position: relative;
+right: 5%;
+font-size: 20pt;
+bottom: 18px;
+ }
+/*! End of nav aftel log in*/
 .backgrounds {
   position: absolute;
   width: 100%;
@@ -63,12 +75,14 @@ body {
   backdrop-filter: blur(1px);
 }
 
-.tagName {
+.tagName { /*? Welcome tag. App.js line 78. */
   margin: auto;
   position: relative;
   text-align: center;
-  color: white;
-  top: 40px;
+  color: lightgoldenrodyellow;
+  top: 60px;
+  font-size: 20pt !important;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   /* left: 45%; */
 }
 .nav-link-logout {

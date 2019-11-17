@@ -34,14 +34,15 @@ class Home extends Component {
  }
     return (
       <div className="homePages">
-        <p className="tag">This is some text for now or maybe for future too</p>
         <div className="jumboPic">
+          <div className="tag">Title</div>
           <img
             style={imageStyle}
             alt="home"
             //? This is for jumbotron image. style above
             src="https://user-images.githubusercontent.com/52087686/68824251-d7c4a200-065b-11ea-8b8e-800c4a41317b.jpg"
-        />
+            />
+            
         </div>
         <Row>
           <Col size="md-6">

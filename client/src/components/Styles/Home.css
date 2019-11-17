@@ -8,13 +8,17 @@ backdrop-filter: blur(8px);
 background-image: url('./Images/city-skyline-1209906.jpg');
 position: absolute;
 } */
-.tag{
+.tag{ /*? title of the Home page. home.js*/
     
+    font-size: 63pt !important;
     color: wheat;
-    font-size: 0pt;
-    /* position: relative; */
-    /* margin-top: 20px; */
+    position: absolute; 
+    margin-top: 20px;
+    left: 44%;
+    text-shadow:  0px 0px 8px  #b90303;
 }
+
+ 
 
 .footerImage{
     
