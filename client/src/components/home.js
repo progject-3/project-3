@@ -35,7 +35,9 @@ class Home extends Component {
     return (
       <div className="homePages">
         <div className="jumboPic">
-          <div className="tag">Title</div>
+          <div className="tag">RentIt<i className="fas fa-key"></i></div>
+          <div className="text-under-title">This Web application helps user finding the perfect rental apartments. Also you can find your next rental from search view in your targeted area anywhere in Chicago area.
+          </div>
           <img
             style={imageStyle}
             alt="home"
