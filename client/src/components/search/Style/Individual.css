@@ -1,3 +1,18 @@
+.buttne{/*? + and - button in spPage Calc. line 88-90 individualPage.js*/
+border-radius: 100%;
+background: wheat;
+width: 29px;
+}
+.buttne-1{
+  border-radius: 100%;
+background: #f5deb3;
+width: 29px;
+}
+/*?End of button style for calc*/
+
+.title-of{/*? Title line 72 in indPage.js*/
+color: lightgoldenrodyellow;
+}
 img {
   width: auto;
   height: auto;
@@ -73,16 +88,50 @@ img {
   /* background-color: rgba(52,73,94,0.75); */
 }
 
-/* Media Queries */
-@media screen and (max-width: 960px) {
-  .parent {
-    width: 100%;
-    margin: 20px 0px;
-  }
-  .all {
-    padding: 20px 20px;
-  }
+/**! This line below is for Modal style only*/
+/*? for modal frame go to index.js inside the Modal folder*/
+
+/*? Modal inputs*/
+input[type=text]{
+border-radius:  15px;
+font-size:12pt;
+margin: 3px;
+outline: none;
+border: 0.5px solid black;
+
 }
+input[type=tel]{
+  border-radius:  15px;
+  font-size:12pt;
+  outline: none;
+  margin: 3px;
+  border: 0.5px solid black;
+}
+textarea[name=message]{
+  border: 0.5px solid black;
+  border-radius:  15px;
+  margin-top: 3px;
+  font-size: small;
+  width: 200px;
+  outline: none;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+button[type=subnits]{
+  border: 0.6px solid black;
+  border-radius: 4px;
+  float: right;
+  margin: 0;
+  font-size: small;
+  background: lightgoldenrodyellow;
+}
+/*t type="text"
+l for="phone"
+ id="phonenum
+for="message"*/
+/*! modal ends here*/
+
+
+
 
 .hello {
   display: none;
@@ -125,14 +174,27 @@ color: white;
     width: 100%;
     height: auto;
   }
-  .scrols {
+  .scrols { /*? This is spPage right column main body and border. line 130 indPage.js*/
+    margin-top: 18px;
     padding: 15px;
     width: 100%;
-    height: 1000px;
+    height: 950px;
     overflow: scroll;
-    border: 0.4px solid white;
+    border: 0.8px solid white;
     border-radius: 15px;
     backdrop-filter: blur(1px);
   
+  
     /* border: 1px solid #ccc; */
+  }
+
+/*! Media Queries */
+  @media screen and (max-width: 960px) {
+    .parent {
+      width: 100%;
+      margin: 20px 0px;
+    }
+    .all {
+      padding: 20px 20px;
+    }
   }
