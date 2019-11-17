@@ -7,7 +7,7 @@ let modelStyle = {
   margin: '0 auto',
   position: 'fixed',
   left: '39%',
-  top: '60%',
+  top: '40%',
   transform: 'translate(-50%,-50%)',
   zIndex: '999',
   // backdropFilter: "blur(10px)",
@@ -31,7 +31,8 @@ let closeButton = {
   width: '30px',
   height: '30px',
   fontWeight: 'bold',
-  alignSelf: 'flex-end'
+  alignSelf: 'flex-end',
+  fontSize: '20px'
 }
 class ModalPage extends Component {
 

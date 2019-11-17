@@ -3,6 +3,7 @@ body {
   background-size: cover;
   backdrop-filter: blur(0px);
   background-color: red;
+  font-size: 2rem !important;
 }
 
 .coloring {
@@ -19,8 +20,8 @@ body {
 }
 .navbar {
   border-bottom: 2px solid black;
-  padding: 0;
-  height: 32px;
+  /* padding: 0; */
+  height: 60px;
   margin: 0;
   background: transparent;
 }
@@ -82,48 +83,3 @@ body {
     position: absolute;
   }
 }
-/* @media screen and (max-width: 500px) {
-  .navbar {
-    float: right;
-    display: block;
-    text-align: left;
-  }
-} */
-
-/* .App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
-} */
-
-/* .App-header {
-  background-color: rgb(13, 104, 156);
-  height: 50px;
-  padding: auto;
-  color: white;
-  border-bottom: 6px solid rgb(255,165,2);
- 
-} */
-
-/* .App-title {
-  font-size: 1.5em;
-} */
-/* 
-.App-intro {
-  font-size: large;
-} */
-
-/* .navbar {
- 
-  margin-top: auto;
-  
-} */
-/* #top-filler {
-  margin-bottom: auto;
-} */
-
-/* #nav-container {
-  align-items: flex-end;
-} */
-/* .form-horizontal{
-
-} */
