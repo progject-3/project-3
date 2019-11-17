@@ -27,16 +27,21 @@ class Navbar extends Component {
       .catch(error => {
         console.log('Logout error');
       });
+  
   }
+  
 
   render() {
     const loggedIn = this.props.loggedIn;
     console.log('navbar render, props: ');
     console.log(this.props);
 
+    const logoStyle = {
+      width: "100px",
+    }
+
     return (
       <div className="backgrounds">
-
         <header className="navbar navbar-expand-sm" id="nav-container">
           <div className="navbar-brand" >
             {loggedIn ? (

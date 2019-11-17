@@ -6,8 +6,16 @@ body {
   font-size: 2rem !important;
 }
 
-.coloring {
+.coloring { /*! color of the Navbar texts*/
   color: aliceblue;
+  text-shadow:  0px 0px 8px  #b90303;
+  font-size: 20pt;
+  padding: 0;
+  margin-left: 5px;
+  font-family: Comic Sans MS Header;
+  height: 35px;
+  position: relative;
+  bottom: 7px;
 }
 .c-logout {
   color: antiquewhite;
@@ -15,9 +23,7 @@ body {
 .App {
   text-align: center;
 }
-.text-secondary {
-  color: white;
-}
+
 .navbar {
   border-bottom: 2px solid black;
   /* padding: 0; */
@@ -25,26 +31,7 @@ body {
   margin: 0;
   background: transparent;
 }
-.navbar-section {
-  /**Nav "Texts"*/
-  font-size: 12pt;
-  padding: 0;
-  margin-left: 5px;
-  color: white;
-  font-family: Comic Sans MS Header;
-  height: 35px;
-  position: relative;
-  bottom: 7px;
-}
-/* .nav-link, .fa-home{ */
-/* display: block; */
-/* font-size: 12pt;
-  padding: 0;
-  margin-left: 5px;
-  color: white;
-  font-family: Comic Sans MS Header;
-  height: 35px; 
-} */
+
 section[name=lg]{ /*! Navbar after log in. line 43-49 navbar.js*/
   position: relative;
 bottom: 29px !important;
@@ -64,7 +51,7 @@ right: 5%;
 font-size: 20pt;
 bottom: 18px;
  }
-/*! End of nav aftel log in*/
+/*! End of nav after log in*/
 .backgrounds {
   position: absolute;
   width: 100%;
