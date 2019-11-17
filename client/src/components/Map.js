@@ -359,7 +359,7 @@ class Map extends Component {
                 value={this.state.state}
               />
             </div> */}
-            <div className="form-group">
+            {/* <div className="form-group">
               <label htmlFor=""></label>
               <input
                 type="text"
@@ -369,7 +369,7 @@ class Map extends Component {
                 readOnly="readOnly"
                 value={this.state.address}
               />
-            </div>
+            </div> */}
           </div>
         </div>
       );

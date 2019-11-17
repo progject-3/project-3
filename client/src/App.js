@@ -10,6 +10,7 @@ import IndividualPage from "./components/search/IndividualPage";
 import NoMatch from "./components/search/NoMatch";
 import "./App.css";
 
+
 class App extends Component {
   constructor() {
     super();
@@ -89,7 +90,7 @@ class App extends Component {
             />
             <Route path="/signup" render={() => <Signup />} />
 
-            <Route exact path="/specificPage" component={IndividualPage} />
+            <Route exact path="/specificPage/:id" component={IndividualPage} />
 
             <Route component={NoMatch} />
           </Switch>

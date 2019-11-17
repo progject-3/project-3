@@ -3,10 +3,10 @@ img {
   height: auto;
   margin-top: 30px;
 }
-img:hover {
+/* img:hover {
   -webkit-transform: scaleX(-1);
   transform: scaleX(-1);
-}
+} */
 .all {
   padding: 5px 5px;
   width: 1200px;

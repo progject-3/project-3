@@ -46,8 +46,10 @@ class ResultList extends Component {
     // console.log("clicked on image")
     // console.log("url: " +url);
     // console.log(id); specificPage
+
     this.setState({
-      redirectTo: "/specificPage",
+     
+      redirectTo: "/specificPage/"+ id,
       id: id,
       location: location,
       imageURL: url,
