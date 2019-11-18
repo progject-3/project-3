@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import { Link } from 'react-router-dom'
+import {withRouter} from 'react-router'
 // import logo from '../logo.svg';
 import '../App.css';
 import axios from 'axios';
@@ -23,6 +24,7 @@ class Navbar extends Component {
             username: null
           });
         }
+        this.props.history.push('/login');
       })
       .catch(error => {
         console.log('Logout error');
@@ -94,4 +96,4 @@ class Navbar extends Component {
   }
 }
 
-export default Navbar;
+export default withRouter(Navbar);
