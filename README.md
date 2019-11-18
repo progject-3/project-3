@@ -38,7 +38,6 @@ This Web application helps user finding the perfect rental apartments. Also you 
    * Express
    * MongoDB
    * Mongoose ORM
-   * Sequelize
    * Body Parser
    * Passport
 
