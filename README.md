@@ -44,3 +44,8 @@ This Web application helps user finding the perfect rental apartments. Also you 
 
 ## Functionality:
 
+   * Payment methods 
+   * Connecting Calendar with DB
+   * User ability to poste
+
+
