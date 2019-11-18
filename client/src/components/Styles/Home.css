@@ -1,20 +1,47 @@
-/* .h{
-    background-image: url('./Images/chicago-home.jpg');
-    background: plum;
-background-size: cover;
-backdrop-filter: blur(8px);
-} */
-/* .jumboPic{
-background-image: url('./Images/city-skyline-1209906.jpg');
-position: absolute;
-} */
+/* Create three equal columns that floats next to each other */
+.row{ /*! This is for 3 column cards inside home*/
+    
+        box-sizing: border-box;
+      
+}
+.column {
+    background-image: url(./Images/back.jpg);
+    background-size: cover;
+    border: 1px solid black;
+    float: left;
+    width: 25%;
+    margin: 90px;
+    border-radius: 15px;
+    height: 240px; /* Should be removed. Only for demonstration */
+  }
+  .Btn-s{
+      height: 30px;
+      width: 90px !important;
+      font-size: x-small;
+      background-image: url(./Images/back.jpg);
+      background-size: cover;
+      border-radius: 5px;
+      position: relative;
+      bottom: 31px;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+      
+    content: "";
+    display: table;
+    clear: both;
+  }
+  /*! ends here*/
+
+
 .tag{ /*? Title of the Home page. home.js*/
     
     font-size: 63pt !important;
     color: wheat;
     position: absolute; 
     margin-top: 20px;
-    left: 36%;
+    left: 22%;
     text-shadow:  0px 0px 8px  #b90303;
     font-family: 'Pacifico', cursive;
 }
@@ -22,7 +49,7 @@ position: absolute;
     color: whitesmoke;
     font-size: 24pt;
     position: absolute; 
-    margin-top: 270px;
+    margin-top: 330px;
     left: 16%;
     right: 16%;
     text-shadow:  0px 0px 8px  blue;
@@ -33,9 +60,10 @@ position: absolute;
     
     position: absolute;
     bottom: 16%;
-    margin-left: 24% ;
+    margin-left: 190px;
+    margin-right: 190px;
     color: aliceblue;
-    font-size: 40pt;
+    font-size: 8pt;
 }
 
  @media screen and (max-width: 390px) {

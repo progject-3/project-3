@@ -37,11 +37,30 @@ class Navbar extends Component {
     console.log(this.props);
 
     const logoStyle = {
-      width: "100px",
+      position: "absolute",
+      width: "50px",
+      height: "50px",
+      left: "90%",
+      bottom: "3px"
+    }
+    const logoTitle = {
+      position: "absolute",
+      color: "rgb(217, 179, 114)",
+      textShadow:  "0px 0px 10px  red",
+      top: "42px",
+      left: "85.5%",
+      fontSize: "8pt",
+      // bottom: "3px",
     }
 
     return (
       <div className="backgrounds">
+        <img
+          style={logoStyle}
+          alt="logo"
+          src={require('./logo/lognav.png')}
+        />
+        <div style={logoTitle}>Change The World</div>
         <header className="navbar navbar-expand-sm" id="nav-container">
           <div className="navbar-brand" >
             {loggedIn ? (
