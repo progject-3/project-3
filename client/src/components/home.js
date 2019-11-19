@@ -53,7 +53,7 @@ class Home extends Component {
     return (
       <div className="homePages">
         <div className="jumboPic">
-          <div className="tag">Change The World<i className="fas fa-key"></i></div>
+          <div className="tag">RentEasy<i className="fas fa-key"></i></div>
           <div className="text-under-title">
             Visiting City of Chicago and looking for Apartments that you like to stay in?
             Then this web application we provide is the best fit for you!
@@ -114,7 +114,7 @@ class Home extends Component {
             src={require('./Styles/Images/Footer-City.png')}
           />
           <div className="footerImage">
-          Change The World! Take a deep dive and browse original neighborhood photos, drone footage, resident reviews and local insights to see if the homes for sale are right for you. We are continuously working to improve the accessibility of our web experience for everyone, and we welcome feedback and accommodation requests.
+          RentEasy! Take a deep dive and browse original neighborhood photos, drone footage, resident reviews and local insights to see if the homes for sale are right for you. We are continuously working to improve the accessibility of our web experience for everyone, and we welcome feedback and accommodation requests.
             </div>
         </div>
       </div>

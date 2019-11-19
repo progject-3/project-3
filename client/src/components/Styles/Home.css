@@ -14,13 +14,19 @@
     border-radius: 15px;
     height: 240px; /* Should be removed. Only for demonstration */
   }
+  .column:hover {
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+    transform: scale(1.05);
+    transition: 0.5s;
+  }
   .Btn-s{
       height: 30px;
-      width: 90px !important;
-      font-size: x-small;
+      width: 110px !important;
+      font-size: 9pt;
       background-image: url(./Images/back.jpg);
       background-size: cover;
       border-radius: 5px;
+      border: 1px solid black;
       position: relative;
       bottom: 31px;
   }
@@ -41,7 +47,7 @@
     color: wheat;
     position: absolute; 
     margin-top: 20px;
-    left: 22%;
+    left: 37%;
     text-shadow:  0px 0px 8px  #b90303;
     font-family: 'Pacifico', cursive;
 }

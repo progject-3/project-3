@@ -50,7 +50,7 @@ class Navbar extends Component {
       color: "rgb(217, 179, 114)",
       textShadow:  "0px 0px 10px  red",
       top: "42px",
-      left: "85.5%",
+      left: "88.5%",
       fontSize: "8pt",
       // bottom: "3px",
     }
@@ -60,9 +60,9 @@ class Navbar extends Component {
         <img
           style={logoStyle}
           alt="logo"
-          src={require('./logo/lognav.png')}
+          src={require('./logo/ico.png')}
         />
-        <div style={logoTitle}>Change The World</div>
+        <div style={logoTitle}>RentEasy</div>
         <header className="navbar navbar-expand-sm" id="nav-container">
           <div className="navbar-brand" >
             {loggedIn ? (

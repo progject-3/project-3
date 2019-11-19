@@ -23,7 +23,7 @@ class Home extends Component {
           {" "}
           <Map
             google={this.props.google}
-            center={{ lat: 41.8960926, lng: -87.6210186}}
+            center={{ lat: 41.887894, lng: -87.634998}} // 41.887894 -87.634998 for merch mart
             height="506.5px"
             zoom={15}
             userData={this.props.userData}
